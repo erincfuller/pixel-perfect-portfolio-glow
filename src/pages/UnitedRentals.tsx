@@ -10,7 +10,6 @@ import legacyPlatformImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28
 import pathForwardImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
 import featureImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
 import reflectionImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
-
 const UnitedRentals = () => {
   useEffect(() => {
     // Scroll to top on page load
@@ -33,7 +32,6 @@ const UnitedRentals = () => {
     });
     return () => observer.disconnect();
   }, []);
-
   return <>
     <Header />
     <main className="overflow-hidden">
@@ -65,11 +63,7 @@ const UnitedRentals = () => {
             </div>
             <div className="relative">
               <div className="bg-blue-600 rounded-lg p-4 relative z-10">
-                <img 
-                  src={projectImage} 
-                  alt="United Rentals Dashboard" 
-                  className="rounded-lg shadow-lg w-full" 
-                />
+                <img src={projectImage} alt="United Rentals Dashboard" className="rounded-lg shadow-lg w-full" />
               </div>
               <div className="absolute bg-blue-500 rounded-lg w-4/5 h-full top-4 left-4 -z-0"></div>
             </div>
@@ -152,11 +146,7 @@ const UnitedRentals = () => {
             </div>
             <div className="relative">
               <div className="bg-blue-600 rounded-lg p-4 relative z-10">
-                <img 
-                  src={legacyPlatformImage} 
-                  alt="Legacy Platform" 
-                  className="rounded-lg shadow-lg w-full" 
-                />
+                <img src={legacyPlatformImage} alt="Legacy Platform" className="rounded-lg shadow-lg w-full" />
               </div>
               <div className="absolute bg-blue-500 rounded-lg w-4/5 h-full top-4 left-4 -z-0"></div>
             </div>
@@ -176,11 +166,7 @@ const UnitedRentals = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8">
             <div className="order-2 md:order-1">
-              <img 
-                src={pathForwardImage}
-                alt="Path Forward" 
-                className="rounded-lg shadow-lg w-full border border-neutral-200" 
-              />
+              <img src={pathForwardImage} alt="Path Forward" className="rounded-lg shadow-lg w-full border border-neutral-200" />
             </div>
             <div className="animate-on-scroll order-1 md:order-2">
               <p className="text-neutral-700 mb-8">
@@ -225,46 +211,40 @@ const UnitedRentals = () => {
         <div className="container mx-auto px-4 md:px-8">
           <div className="animate-on-scroll mb-8 max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-semibold">Setting a New Standard</h2>
-            <p className="text-neutral-700 text-sm mt-2">
-              Our redesign established new benchmarks for efficiency and usability across the rental equipment industry
-            </p>
+            <p className="text-neutral-700 text-sm mt-2">This project marked a turning point for how United Rentals approached product development—shifting from a historically waterfall process to a more iterative, user-centered way of working. I championed new practices like design-to-dev alignment using Figma DevMode, and standing up UAT practice as a standard quality gate. These foundational shifts not only improved this project’s outcomes but also laid the groundwork for a stronger, more agile tech organization moving forward.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="bg-white p-6 rounded-lg shadow-sm animate-on-scroll">
               <div className="w-12 h-12 rounded-md bg-red-100 flex items-center justify-center mb-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 5v14M5 12h14" stroke="#FF6B6B" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M12 5v14M5 12h14" stroke="#FF6B6B" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </div>
-              <h3 className="font-medium mb-2">Streamlined Workflows</h3>
-              <p className="text-sm text-neutral-700">
-                Reduced time-to-completion for common tasks by 65%, allowing staff to manage more rentals with less effort.
-              </p>
+              <h3 className="font-medium mb-2">Research and Benchmarking</h3>
+              <p className="text-sm text-neutral-700">I preformed competitive and analogous research across leading B2B platforms to understand modern user expectations around speed, accessibility, and interaction patterns. This helped us define a future-ready UX standard that not only caught up to industry leaders but set United Rentals apart in how it serves its enterprise customers.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm animate-on-scroll">
               <div className="w-12 h-12 rounded-md bg-red-100 flex items-center justify-center mb-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 5v14M5 12h14" stroke="#FF6B6B" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M12 5v14M5 12h14" stroke="#FF6B6B" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </div>
-              <h3 className="font-medium mb-2">Unified Experience</h3>
-              <p className="text-sm text-neutral-700">
-                Consistent design system created continuity across all platforms, reducing training time by 40%.
-              </p>
+              <h3 className="font-medium mb-2">Design Workflow Improvement</h3>
+              <p className="text-sm text-neutral-700">To ship with confidence and speed, I championed several process improvements that transformed how design and engineering collaborated: 
+
+• Figma DevMode: Streamlined design-to-dev handoffs, giving engineers direct access to specs, tokens, and component logic. • Component-Based Design System: Built out a scalable UI library to ensure consistency across workflows and future features. • User Acceptance Testing (UAT): Established a formal UAT process—new to United Rentals—to validate every release and prevent regressions before launch.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm animate-on-scroll">
               <div className="w-12 h-12 rounded-md bg-red-100 flex items-center justify-center mb-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 5v14M5 12h14" stroke="#FF6B6B" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M12 5v14M5 12h14" stroke="#FF6B6B" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </div>
-              <h3 className="font-medium mb-2">Scalable Architecture</h3>
-              <p className="text-sm text-neutral-700">
-                Future-proof design accommodates growing inventory and expanding feature set with no performance degradation.
-              </p>
+              <h3 className="font-medium mb-2">Internal and Closed-Beta Pilots </h3>
+              <p className="text-sm text-neutral-700">We kicked off with targeted internal pilots, working directly with our national and strategic account sales reps—the team closest to customer pain points and day-to-day product friction. Their insights helped us quickly validate early concepts, identify high-impact workflows to prioritize, and pressure-test where the legacy experience was breaking down. This early partnership ensured our redesign wasn’t happening in a vacuum, but deeply grounded in real user and customer feedback - also augmented by digital means like surveys and user analytics.</p>
             </div>
           </div>
         </div>
@@ -302,11 +282,7 @@ const UnitedRentals = () => {
           
           <div className="relative">
             <div className="bg-blue-600 rounded-lg p-6 relative z-10">
-              <img 
-                src={featureImage} 
-                alt="Feature Highlights" 
-                className="rounded-lg w-full" 
-              />
+              <img src={featureImage} alt="Feature Highlights" className="rounded-lg w-full" />
               
               {/* Feature callouts */}
               <div className="absolute -left-3 top-1/4 flex items-center">
@@ -344,11 +320,7 @@ const UnitedRentals = () => {
               </p>
             </div>
             <div>
-              <img 
-                src={reflectionImage} 
-                alt="Reflection"
-                className="rounded-lg shadow-lg w-full" 
-              />
+              <img src={reflectionImage} alt="Reflection" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </div>
@@ -389,5 +361,4 @@ const UnitedRentals = () => {
     <Footer />
   </>;
 };
-
 export default UnitedRentals;
