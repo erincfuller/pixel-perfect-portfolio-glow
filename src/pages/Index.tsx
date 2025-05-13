@@ -39,7 +39,7 @@ const Index = () => {
         {/* Hero Section */}
         <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-neutral-100 relative">
           <div className="container mx-auto px-4 md:px-8">
-            <div className="flex flex-col md:flex-row items-center">
+            <div className="flex flex-col md:flex-row items-center mx-auto">
               <div className="md:w-1/2 mb-10 md:mb-0 md:pr-12">
                 <div className="text-primary-500 font-medium mb-3">MY NAME IS ERIN FULLER, I AM A</div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
