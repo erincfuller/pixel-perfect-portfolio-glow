@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -9,6 +10,8 @@ import { FileText, ChevronRight, Users, Shield } from "lucide-react";
 
 // Import main project image
 import projectImage from '/lovable-uploads/7d8833a2-f336-4886-88d4-1a02fde3f482.png';
+// Import ecosystem diagram
+import ecosystemVisual from '/lovable-uploads/de2382e3-e64b-4724-b6ca-d2b2c491bbff.png';
 // Import process diagram
 import processDiagram from '/lovable-uploads/c9c10c48-7c9b-403d-b9d7-9dc99b9ff8dd.png';
 // Import smart health cards image
@@ -55,35 +58,55 @@ const CommonPass = () => {
   return <>
       <Header />
       <main>
-        {/* Hero Section */}
+        {/* Hero Section - Updated to match Figma design */}
         <section className="pt-32 pb-16 bg-neutral-100">
           <div className="container mx-auto px-4 md:px-8">
-            <div className="mb-8">
-              <span className="text-primary-500 font-medium">THE COMMONS PROJECT</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Making Global Travel Safer During COVID-19
-            </h1>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-              <div>
-                <h4 className="text-sm text-neutral-700 mb-1">Project Type</h4>
-                <p className="font-medium">B2B2C · Healthcare & Travel Tech</p>
+            <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
+              {/* Left Column - Metadata */}
+              <div className="w-full md:w-1/2 space-y-6">
+                <div>
+                  <span className="text-primary-500 uppercase text-sm font-medium tracking-wider">THE COMMONS PROJECT</span>
+                  <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-8">
+                    Making Global Travel Safer During COVID-19
+                  </h1>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex flex-col gap-1">
+                    <h4 className="text-sm text-neutral-700">Project Type</h4>
+                    <p className="font-medium">B2B2C · Healthcare & Travel Tech</p>
+                  </div>
+                  
+                  <div className="flex flex-col gap-1">
+                    <h4 className="text-sm text-neutral-700">Role</h4>
+                    <p className="font-medium">Product Designer</p>
+                  </div>
+                  
+                  <div className="flex flex-col gap-1">
+                    <h4 className="text-sm text-neutral-700">Timeline</h4>
+                    <p className="font-medium">Dec 2020 – Jul 2022</p>
+                  </div>
+                  
+                  <div className="flex flex-col gap-1">
+                    <h4 className="text-sm text-neutral-700">Team</h4>
+                    <p className="font-medium">PMs, Engineers, Health Policy Experts, Airline Partners, Lab Integration Specialists</p>
+                  </div>
+                  
+                  <div className="flex flex-col gap-1">
+                    <h4 className="text-sm text-neutral-700">Product</h4>
+                    <p className="font-medium">CommonPass – Digital health credential platform by The Commons Project</p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h4 className="text-sm text-neutral-700 mb-1">Role</h4>
-                <p className="font-medium">Product Designer</p>
+              
+              {/* Right Column - Ecosystem Visual */}
+              <div className="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+                <img 
+                  src={ecosystemVisual} 
+                  alt="CommonPass Ecosystem with SMART Health Card" 
+                  className="w-full max-w-lg object-contain"
+                />
               </div>
-              <div>
-                <h4 className="text-sm text-neutral-700 mb-1">Timeline</h4>
-                <p className="font-medium">Dec 2020 – Jul 2022</p>
-              </div>
-              <div>
-                <h4 className="text-sm text-neutral-700 mb-1">Team</h4>
-                <p className="font-medium">PMs, Engineers, Health Experts, Airline Partners</p>
-              </div>
-            </div>
-            <div className="mt-12">
-              <img src={projectImage} alt="CommonPass Mobile Application" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </section>
