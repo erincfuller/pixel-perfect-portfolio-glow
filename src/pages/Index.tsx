@@ -11,6 +11,12 @@ import profileImage from '/lovable-uploads/be434163-26fb-460e-924d-88c4f9ff34c8.
 import productStrategyIcon from '/lovable-uploads/7b2b20da-40fb-40fd-9c39-600e3392c01a.png';
 import productDesignIcon from '/lovable-uploads/2b49d7e1-5c44-4716-bc78-b6a66d9178d0.png';
 import productManagementIcon from '/lovable-uploads/a7ea2ca0-9a17-4998-967c-6a88c27e6469.png';
+
+// Import project logo images
+import commonsProjectLogo from '/lovable-uploads/17e7c264-99c0-4b89-a026-795e5a6c74d4.png';
+import pittsburghFoodbankLogo from '/lovable-uploads/31aae7ce-4943-44e7-8d86-942608478b00.png';
+import tampaWellLogo from '/lovable-uploads/84ef49a6-b49e-464c-be66-f8dd4c9ee882.png';
+
 const Index = () => {
   useEffect(() => {
     // Scroll to top on page load
@@ -162,27 +168,99 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Projects Section */}
-        <section className="py-16 md:py-24" id="work">
+        {/* Projects Section - Selected Works */}
+        <section className="py-16 md:py-24 bg-neutral-100" id="work">
           <div className="container mx-auto px-4 md:px-8">
             <div className="text-center mb-12">
-              <div className="text-primary-500 font-medium mb-2 uppercase tracking-wide text-sm animate-on-scroll">
+              <h2 className="text-primary-500 uppercase text-sm font-medium tracking-wide mb-2 animate-on-scroll">
                 Selected Works
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold animate-on-scroll">Selected Works</h2>
+              </h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="animate-on-scroll">
-                <ProjectCard title="The Commons Project" description="Designed scalable solutions for CommonPass—navigating a rapidly evolving global health landscape to streamline digital health verification for international travel." imageUrl="/lovable-uploads/c059cbb7-5411-45c8-877c-81902f0effe9.png" link="/projects/common-pass" />
+            <div className="flex flex-col md:flex-row gap-8">
+              {/* The Commons Project Card */}
+              <div className="bg-white rounded-lg p-6 shadow-sm flex-1 animate-on-scroll">
+                <div className="mb-4 w-16 h-16 flex items-center justify-center rounded-md bg-neutral-100">
+                  <img 
+                    src={commonsProjectLogo} 
+                    alt="The Commons Project logo" 
+                    className="max-w-[70%] max-h-[70%]" 
+                  />
+                </div>
+                
+                <h3 className="text-xl font-medium mb-2">The Commons Project</h3>
+                <p className="text-neutral-700 mb-4">
+                  Designed scalable solutions for CommonPass—navigating a 
+                  rapidly evolving global health landscape to streamline digital 
+                  health verification for international travel.
+                </p>
+                
+                <Link 
+                  to="/projects/common-pass" 
+                  className="inline-flex items-center text-primary-500 font-medium hover:underline"
+                >
+                  See Case Study
+                  <svg className="ml-2 w-4 h-4" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </Link>
               </div>
               
-              <div className="animate-on-scroll">
-                <ProjectCard title="Pittsburgh Foodbank" description="Redesign, test design, and implement food bank directory to help low-income individuals and families find food, resources, and support services" imageUrl="/lovable-uploads/ec0d9b50-4293-44a1-ba1c-37273bd2d428.png" link="/projects/find-food" />
+              {/* Pittsburgh Foodbank Card */}
+              <div className="bg-white rounded-lg p-6 shadow-sm flex-1 animate-on-scroll">
+                <div className="mb-4 w-16 h-16 flex items-center justify-center rounded-md bg-neutral-100">
+                  <img 
+                    src={pittsburghFoodbankLogo} 
+                    alt="Pittsburgh Foodbank logo" 
+                    className="max-w-[70%] max-h-[70%]" 
+                  />
+                </div>
+                
+                <h3 className="text-xl font-medium mb-2">Pittsburgh Foodbank</h3>
+                <p className="text-neutral-700 mb-4">
+                  Redesigned the Greater Pittsburgh Community Food Bank's 
+                  locator, turning a static tool into an intuitive, mobile-friendly 
+                  experience that helps food-insecure individuals access up-to-date resources.
+                </p>
+                
+                <Link 
+                  to="/projects/find-food" 
+                  className="inline-flex items-center text-primary-500 font-medium hover:underline"
+                >
+                  See Case Study
+                  <svg className="ml-2 w-4 h-4" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </Link>
               </div>
               
-              <div className="animate-on-scroll">
-                <ProjectCard title="Tamaya Well" description="Designed and built an open-source digital platform to analyze, validate, and collaborate on water quality data with local communities" imageUrl="/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png" link="/projects/tamaya-well" />
+              {/* Tampa Well Card */}
+              <div className="bg-white rounded-lg p-6 shadow-sm flex-1 animate-on-scroll">
+                <div className="mb-4 w-16 h-16 flex items-center justify-center rounded-md bg-neutral-100">
+                  <img 
+                    src={tampaWellLogo} 
+                    alt="Tampa Well logo" 
+                    className="max-w-[70%] max-h-[70%]" 
+                  />
+                </div>
+                
+                <h3 className="text-xl font-medium mb-2">Tampa Well</h3>
+                <p className="text-neutral-700 mb-4">
+                  Designed and launched TampaWell, a scalable digital platform 
+                  connecting residents to local wellness events, personalized health 
+                  content, and community resources, with plans for expansion to 
+                  communities nationwide.
+                </p>
+                
+                <Link 
+                  to="/projects/tamaya-well" 
+                  className="inline-flex items-center text-primary-500 font-medium hover:underline"
+                >
+                  Learn More
+                  <svg className="ml-2 w-4 h-4" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </Link>
               </div>
             </div>
           </div>
