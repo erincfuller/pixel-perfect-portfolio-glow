@@ -112,7 +112,7 @@ const Index = () => {
           <div className="container mx-auto px-4 md:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="animate-on-scroll">
-                <img src="/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png" alt="United Rentals Project" className="rounded-lg shadow-lg w-full" />
+                <img alt="United Rentals Project" className="rounded-lg shadow-lg w-full" src="/lovable-uploads/38bc9874-3511-4161-9f2f-01b945f90e18.jpg" />
               </div>
               
               <div className="animate-on-scroll">
