@@ -4,13 +4,7 @@ import Footer from '../components/Footer';
 import { Button } from "../components/ui/button";
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../components/ui/carousel";
 
 // Import placeholder images 
 import projectImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
@@ -18,12 +12,13 @@ import legacyPlatformImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28
 import pathForwardImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
 import featureImage from '/lovable-uploads/2f1b5b20-5794-45be-978a-62682f475af8.png';
 import reflectionImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
-
 const UnitedRentals = () => {
-  const [api, setApi] = useState<{ scrollNext: () => void; scrollPrev: () => void } | null>(null);
+  const [api, setApi] = useState<{
+    scrollNext: () => void;
+    scrollPrev: () => void;
+  } | null>(null);
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-
   useEffect(() => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
@@ -49,18 +44,15 @@ const UnitedRentals = () => {
   // Set up carousel autoplay
   useEffect(() => {
     if (isPaused || !api) return;
-
     const interval = setInterval(() => {
       api.scrollNext();
     }, 6000);
-
     return () => clearInterval(interval);
   }, [api, isPaused]);
 
   // Track current slide
   useEffect(() => {
     if (!api) return;
-
     const handleSelect = () => {
       // Get current index from embla carousel
       const emblaApi = (api as any).carouselRef?.current?.emblaApi;
@@ -72,31 +64,20 @@ const UnitedRentals = () => {
 
     // Add event listeners
     (api as any).on?.("select", handleSelect);
-    
     return () => {
       (api as any).off?.("select", handleSelect);
     };
   }, [api]);
 
   // Create dot indicators 
-  const dotIndicators = [0, 1, 2].map((idx) => (
-    <button 
-      key={idx} 
-      onClick={() => {
-        if (!api) return;
-        // Logic to scroll to specific slide
-        const emblaApi = (api as any).carouselRef?.current?.emblaApi;
-        if (emblaApi) {
-          emblaApi.scrollTo(idx);
-        }
-      }}
-      className={`w-2 h-2 rounded-full mx-1 transition-all duration-300 ${
-        current === idx ? "bg-primary-500 scale-125" : "bg-neutral-300"
-      }`}
-      aria-label={`Go to slide ${idx + 1}`}
-    />
-  ));
-
+  const dotIndicators = [0, 1, 2].map(idx => <button key={idx} onClick={() => {
+    if (!api) return;
+    // Logic to scroll to specific slide
+    const emblaApi = (api as any).carouselRef?.current?.emblaApi;
+    if (emblaApi) {
+      emblaApi.scrollTo(idx);
+    }
+  }} className={`w-2 h-2 rounded-full mx-1 transition-all duration-300 ${current === idx ? "bg-primary-500 scale-125" : "bg-neutral-300"}`} aria-label={`Go to slide ${idx + 1}`} />);
   return <>
     <Header />
     <main className="overflow-hidden">
@@ -345,52 +326,30 @@ const UnitedRentals = () => {
             <h2 className="text-3xl font-semibold">Feature Highlights</h2>
           </div>
           
-          <div className="relative"
-               onMouseEnter={() => setIsPaused(true)}
-               onMouseLeave={() => setIsPaused(false)}>
-            <Carousel 
-              className="w-full max-w-5xl mx-auto"
-              setApi={setApi}
-              opts={{
-                align: "center",
-                loop: true,
-              }}
-            >
+          <div className="relative" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
+            <Carousel className="w-full max-w-5xl mx-auto" setApi={setApi} opts={{
+              align: "center",
+              loop: true
+            }}>
               <CarouselContent className="h-[400px] sm:h-[500px] md:h-[600px]">
                 <CarouselItem>
                   <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
-                    <img 
-                      src={featureImage} 
-                      alt="Real-time fleet dashboard" 
-                      className="object-cover rounded-xl w-full h-full"
-                    />
+                    <img src={featureImage} alt="Real-time fleet dashboard" className="object-cover rounded-xl w-full h-full" />
                   </div>
                 </CarouselItem>
                 <CarouselItem>
                   <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
-                    <img 
-                      src={featureImage} 
-                      alt="Equipment management system" 
-                      className="object-cover rounded-xl w-full h-full"
-                    />
+                    <img src={featureImage} alt="Equipment management system" className="object-cover rounded-xl w-full h-full" />
                   </div>
                 </CarouselItem>
                 <CarouselItem>
                   <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
-                    <img 
-                      src={featureImage} 
-                      alt="Maintenance scheduling interface" 
-                      className="object-cover rounded-xl w-full h-full"
-                    />
+                    <img src={featureImage} alt="Maintenance scheduling interface" className="object-cover rounded-xl w-full h-full" />
                   </div>
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious 
-                className="h-12 w-12 border-none bg-primary-500 text-white opacity-0 hover:opacity-100 transition-all duration-300 hover:scale-105 left-4 md:left-2" 
-              />
-              <CarouselNext 
-                className="h-12 w-12 border-none bg-primary-500 text-white opacity-0 hover:opacity-100 transition-all duration-300 hover:scale-105 right-4 md:right-2" 
-              />
+              <CarouselPrevious className="h-12 w-12 border-none bg-primary-500 text-white opacity-0 hover:opacity-100 transition-all duration-300 hover:scale-105 left-4 md:left-2" />
+              <CarouselNext className="h-12 w-12 border-none bg-primary-500 text-white opacity-0 hover:opacity-100 transition-all duration-300 hover:scale-105 right-4 md:right-2" />
             </Carousel>
             
             <div className="flex justify-center mt-6 space-x-2">
