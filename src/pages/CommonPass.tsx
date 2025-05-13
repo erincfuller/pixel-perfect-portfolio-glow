@@ -98,7 +98,7 @@ const CommonPass = () => {
               </div>
               
               {/* Right Column - Ecosystem Visual */}
-              <div className="w-full md:w-1 flex justify-center items-center mt-6 md:mt-0">
+              <div className="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
                 <img src={ecosystemVisual} alt="CommonPass Ecosystem with SMART Health Card" className="w-full max-w-lg object-contain" />
               </div>
             </div>
