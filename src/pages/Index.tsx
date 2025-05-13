@@ -268,7 +268,7 @@ const Index = () => {
                 
                 <ExperienceCard company="The Commons Project" role="Product Manager" period="December 2020 - July 2022" description="CommonPass, CommonHealth, CommonCheck COVID-19 verification platform" logoUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC7J6YeRM8Q3tfTchbuGYxgnEtFM0yzcXpVQ&s" />
                 
-                <ExperienceCard company="Carnegie Mellon University" role="" period="Graduate May 2020" description="Bachelor of Human-Computer Interaction and Architecture, Innovation Scholar: Swartz Center for Entrepreneurship" logoUrl="https://www.nist.gov/sites/default/files/styles/social/public/images/2019/12/23/CMU%20logo.png?itok=h0WYxS17" />
+                <ExperienceCard company="Carnegie Mellon University" role="Bachelor's degree" period="Graduate May 2020" description="Bachelor of Human-Computer Interaction and Architecture, Innovation Scholar: Swartz Center for Entrepreneurship" logoUrl="https://www.nist.gov/sites/default/files/styles/social/public/images/2019/12/23/CMU%20logo.png?itok=h0WYxS17" />
               </div>
             </div>
           </div>
