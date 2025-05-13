@@ -393,8 +393,8 @@ Critical for our field users
                 </p>
               </div>
               <div className="md:col-span-2 relative">
-                <div className="bg-blue-600 rounded-lg p-4 relative z-10 transform md:translate-x-4">
-                  <img src={reflectionImage} alt="Notification Journey mobile UI" className="rounded-lg shadow-lg w-full object-cover" />
+                <div className="bg-blue-600 rounded-lg relative z-10 transform md:translate-x-4">
+                  <img src={reflectionImage} alt="Notification Journey mobile UI" className="rounded-lg shadow-lg w-full" />
                 </div>
               </div>
             </div>
