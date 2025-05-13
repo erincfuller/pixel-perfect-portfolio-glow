@@ -11,7 +11,8 @@ import projectImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.
 import legacyPlatformImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
 import pathForwardImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
 import featureImage from '/lovable-uploads/2f1b5b20-5794-45be-978a-62682f475af8.png';
-import reflectionImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
+import reflectionImage from '/lovable-uploads/b3297883-aba2-4d3d-95c1-bf85a6c0c6ca.png';
+
 const UnitedRentals = () => {
   const [api, setApi] = useState<{
     scrollNext: () => void;
@@ -360,17 +361,31 @@ const UnitedRentals = () => {
       </section>
       
       {/* Reflection Section */}
-      <section className="py-16 bg-neutral-50">
+      <section className="py-16 bg-neutral-100">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="animate-on-scroll">
-              <h2 className="text-2xl font-semibold mb-4">Reflection</h2>
-              <p className="text-neutral-700 text-sm mb-6">
-                This project demonstrated how thoughtful UX design and architecture can transform operational efficiency. The redesigned platform not only improved internal workflows but also enhanced customer satisfaction through faster service and more accurate information.
-              </p>
-            </div>
-            <div>
-              <img src={reflectionImage} alt="Reflection" className="rounded-lg shadow-lg w-full" />
+          <div className="bg-white p-12 rounded-xl shadow-sm">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+              <div className="md:col-span-3 animate-on-scroll">
+                <h2 className="text-3xl font-semibold mb-6">Reflection</h2>
+                <p className="text-neutral-700">
+                  This project was more than a product redesign—it was a shift in how United Rentals 
+                  builds, tests, and scales technology. By combining customer insight with stronger 
+                  delivery practices, we didn't just improve the user experience—we set a new bar for 
+                  product development at scale. The measurable impact on user efficiency and 
+                  satisfaction proved that our investments paid off. Most importantly, we left the 
+                  organization with new tools, processes, and mindsets that will continue to 
+                  strengthen future product work.
+                </p>
+              </div>
+              <div className="md:col-span-2 relative">
+                <div className="bg-blue-600 rounded-lg p-4 relative z-10 transform md:translate-x-4">
+                  <img 
+                    src={reflectionImage} 
+                    alt="Notification Journey mobile UI" 
+                    className="rounded-lg shadow-lg w-full object-cover" 
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
