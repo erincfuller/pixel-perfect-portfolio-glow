@@ -57,7 +57,7 @@ const Index = () => {
                 </div>
               </div>
               <div className="md:w-1/2 relative">
-                <img src="/lovable-uploads/ff96fce8-2c39-4da5-b607-1325f7bf72a5.png" alt="Product Strategist" className="w-30" />
+                <img src="/lovable-uploads/ff96fce8-2c39-4da5-b607-1325f7bf72a5.png" alt="Product Strategist" className="w-88" />
               </div>
             </div>
           </div>
