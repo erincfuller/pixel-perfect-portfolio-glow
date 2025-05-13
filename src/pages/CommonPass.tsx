@@ -23,6 +23,13 @@ import smartHealthCardsPhones from '/lovable-uploads/29c3680a-6ab1-4737-a14f-d9a
 import standardsIcon from '/lovable-uploads/1893beb9-94bd-4112-a58d-9d9c2cd39e5b.png';
 import funnelIcon from '/lovable-uploads/1f77d6d0-46eb-43ec-9ccc-2c91aa520971.png';
 import playbooksIcon from '/lovable-uploads/24fba8b3-d957-4e24-982f-4fb91c2fdbf7.png';
+
+// Import new network scale icons
+import govIcon from '/lovable-uploads/c3c5d9fd-0412-4525-bc20-b87ed9a1b70c.png';
+import dataIcon from '/lovable-uploads/1350de9f-3aea-469d-bb80-fb429249265c.png';
+import testingIcon from '/lovable-uploads/676fe7ec-e36f-487b-9273-1e9eaafe55ce.png';
+import usersIcon from '/lovable-uploads/610511a5-0fb6-4076-9e08-83f6909db426.png';
+
 const CommonPass = () => {
   useEffect(() => {
     // Scroll to top on page load
@@ -81,33 +88,53 @@ const CommonPass = () => {
           </div>
         </section>
 
-        {/* Overview Section */}
+        {/* Overview Section - Updated */}
         <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-3xl mx-auto">
-              <div className="mb-12 animate-on-scroll">
-                <h2 className="text-3xl font-bold mb-4">Building Digital Health Infrastructure for Global Reopening</h2>
-                <p className="text-neutral-700">
-                  The Commons Project created a trusted, decentralized solution that allowed travelers to securely verify and share their COVID-19 status while protecting their privacy, helping governments and airlines safely reopen borders during the pandemic.
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 my-12">
+          <div className="container mx-auto px-4 md:px-16 text-center">
+            <p className="text-primary-500 uppercase text-sm mb-2">Overview</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Building Digital Health Infrastructure<br/>for Global Reopening</h2>
+            <p className="max-w-3xl mx-auto text-neutral-700 mb-12">
+              The Commons Project, backed by the World Economic Forum and the Rockefeller Foundation, builds solutions that empower people to manage and share their health data. In less than three years, the team launched a suite of products to address safe travel and health data verification during COVID-19.
+            </p>
+            
+            {/* Network Scale Block */}
+            <div className="bg-neutral-100 rounded-lg p-8 md:p-12">
+              <p className="text-primary-500 uppercase text-sm mb-8">Network Scale</p>
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                {/* Stat 1 */}
                 <div className="animate-on-scroll">
-                  <div className="text-3xl md:text-4xl font-bold">50+</div>
-                  <div className="text-sm text-neutral-700">National Governments</div>
+                  <div className="bg-primary-50 w-16 h-16 rounded-md flex items-center justify-center mx-auto mb-3">
+                    <img src={govIcon} alt="Government Icon" className="w-12 h-12 object-contain" />
+                  </div>
+                  <p className="text-3xl font-semibold">50+</p>
+                  <p className="text-neutral-700">National Governments</p>
                 </div>
+                
+                {/* Stat 2 */}
                 <div className="animate-on-scroll">
-                  <div className="text-3xl md:text-4xl font-bold">220+</div>
-                  <div className="text-sm text-neutral-700">Data Sources</div>
+                  <div className="bg-primary-50 w-16 h-16 rounded-md flex items-center justify-center mx-auto mb-3">
+                    <img src={dataIcon} alt="Data Icon" className="w-12 h-12 object-contain" />
+                  </div>
+                  <p className="text-3xl font-semibold">220+</p>
+                  <p className="text-neutral-700">Data Sources</p>
                 </div>
+                
+                {/* Stat 3 */}
                 <div className="animate-on-scroll">
-                  <div className="text-3xl md:text-4xl font-bold">26K+</div>
-                  <div className="text-sm text-neutral-700">Testing Locations</div>
+                  <div className="bg-primary-50 w-16 h-16 rounded-md flex items-center justify-center mx-auto mb-3">
+                    <img src={testingIcon} alt="Testing Icon" className="w-12 h-12 object-contain" />
+                  </div>
+                  <p className="text-3xl font-semibold">26K+</p>
+                  <p className="text-neutral-700">Testing Locations</p>
                 </div>
+                
+                {/* Stat 4 */}
                 <div className="animate-on-scroll">
-                  <div className="text-3xl md:text-4xl font-bold">200M+</div>
-                  <div className="text-sm text-neutral-700">Individuals Reached</div>
+                  <div className="bg-primary-50 w-16 h-16 rounded-md flex items-center justify-center mx-auto mb-3">
+                    <img src={usersIcon} alt="Users Icon" className="w-12 h-12 object-contain" />
+                  </div>
+                  <p className="text-3xl font-semibold">200M</p>
+                  <p className="text-neutral-700">Individuals reached</p>
                 </div>
               </div>
             </div>
