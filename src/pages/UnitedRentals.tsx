@@ -148,13 +148,13 @@ Indicating flow efficiency
               </div>
               <div className="animate-on-scroll">
                 <div className="text-3xl md:text-3xl font-bold text-center">↓ 60%</div>
-                <div className="text-sm text-neutral-700">Rage clicks 
+                <div className="text-sm text-neutral-700 text-center">Rage clicks
 Indicating overall satisfaction
                 </div>
               </div>
               <div className="animate-on-scroll">
                 <div className="text-3xl md:text-3xl font-bold text-center">100%</div>
-                <div className="text-sm text-neutral-700">Fully Responsive 
+                <div className="text-sm text-neutral-700 text-center">Fully Responsive
 Critical for our field users 
                 </div>
               </div>
