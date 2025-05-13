@@ -112,7 +112,7 @@ const FindFood = () => {
             </div>
             
             <div className="text-center animate-on-scroll">
-              <p className="text-neutral-700 mb-12 max-w-3xl">
+              <p className="text-neutral-700 mb-12 max-w-3xl text-center">
                 The Pittsburgh Food Bank launched our redesigned solution in 2021, making it easier for thousands of community members to find food every day. They plan to expand this model to other regional food banks if proven successful.
               </p>
               <Button asChild className="mt-6">
