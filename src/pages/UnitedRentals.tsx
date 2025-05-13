@@ -13,7 +13,6 @@ import pathForwardImage from '/lovable-uploads/75dd3cea-e1c7-4a90-a4c5-0f8698779
 import featureImage from '/lovable-uploads/2f1b5b20-5794-45be-978a-62682f475af8.png';
 import reflectionImage from '/lovable-uploads/b3297883-aba2-4d3d-95c1-bf85a6c0c6ca.png';
 import blueBackground from '/lovable-uploads/22f618eb-d284-4973-8a58-e5640ce17a75.png';
-
 const UnitedRentals = () => {
   const [api, setApi] = useState<{
     scrollNext: () => void;
@@ -263,7 +262,7 @@ Critical for our field users
       </section>
 
       {/* Setting a New Standard Section */}
-      <section className="py-16 bg-neutral-50">
+      <section className="py-16 bg-neutral-100">
         <div className="container mx-auto px-4 md:px-8">
           <div className="animate-on-scroll mb-8 max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-semibold">Setting a New Standard</h2>
@@ -326,8 +325,8 @@ Critical for our field users
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-red-50 aspect-square rounded-lg"></div>
               <div className="bg-red-100 aspect-square rounded-lg"></div>
-              <div className="bg-blue-50 aspect-square rounded-lg"></div>
-              <div className="bg-blue-500 aspect-square rounded-lg"></div>
+              
+              
             </div>
           </div>
         </div>
