@@ -56,7 +56,7 @@ const Index = () => {
                   </Button>
                 </div>
               </div>
-              <div className="md:w-1/2 mb-10 md:mb-0 md:pr-12\n">
+              <div className="md:w-1/3 mb-10 md:mb-0 md:pr-12\\n">
                 <img src="/lovable-uploads/ff96fce8-2c39-4da5-b607-1325f7bf72a5.png" alt="Product Strategist" className="" />
               </div>
             </div>
