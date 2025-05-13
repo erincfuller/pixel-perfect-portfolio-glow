@@ -265,7 +265,7 @@ Critical for our field users
       <section className="py-16 bg-neutral-100">
         <div className="container mx-auto px-4 md:px-8">
           <div className="animate-on-scroll mb-8 max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-semibold">Setting a New Standard</h2>
+            <h2 className="text-3xl font-semibold">Setting a New Standard</h2>
             <p className="text-neutral-700 text-sm mt-2">This project marked a turning point for how United Rentals approached product development—shifting from a historically waterfall process to a more iterative, user-centered way of working. I championed new practices like design-to-dev alignment using Figma DevMode, and standing up UAT practice as a standard quality gate. These foundational shifts not only improved this project's outcomes but also laid the groundwork for a stronger, more agile tech organization moving forward.</p>
           </div>
           
