@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from "../components/ui/button";
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, Plus } from "lucide-react";
+import { ArrowLeft, ArrowRight, Plus, Check } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../components/ui/carousel";
 
 // Import placeholder images 
@@ -400,30 +400,40 @@ Critical for our field users 
       {/* Interested in more? */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="animate-on-scroll mb-8">
-            <h2 className="text-2xl font-semibold">Interested in more?</h2>
-          </div>
-          
-          <div className="space-y-4">
-            <div className="flex items-start gap-2">
-              <div className="mt-1 text-primary-500">
-                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="4" cy="4" r="4" fill="currentColor" />
-                </svg>
-              </div>
-              <Link to="/projects/common-pass" className="text-primary-500 hover:underline">
-                View CommonPass Project
-              </Link>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+            {/* Left Column (65% width) */}
+            <div className="md:col-span-7 animate-on-scroll">
+              <h2 className="text-3xl font-semibold">Interested in more?</h2>
             </div>
-            <div className="flex items-start gap-2">
-              <div className="mt-1 text-primary-500">
-                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="4" cy="4" r="4" fill="currentColor" />
-                </svg>
+            
+            {/* Right Column (35% width) */}
+            <div className="md:col-span-5 animate-on-scroll">
+              <div className="mb-4">
+                <span className="text-primary-500 font-medium">Interested in more?</span> Contact me for the case study's with additional insights and artifacts:
               </div>
-              <Link to="/projects/find-food" className="text-primary-500 hover:underline">
-                View FindFood Project
-              </Link>
+              
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary-50 flex items-center justify-center text-primary-500">
+                    <Check size={16} />
+                  </div>
+                  <span>Voice of the customer insights</span>
+                </div>
+                
+                <div className="flex items-center gap-3">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary-50 flex items-center justify-center text-primary-500">
+                    <Check size={16} />
+                  </div>
+                  <span>Deep dive on process of one feature</span>
+                </div>
+                
+                <div className="flex items-center gap-3">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary-50 flex items-center justify-center text-primary-500">
+                    <Check size={16} />
+                  </div>
+                  <span>Design thinking lunch and learn</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
