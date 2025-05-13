@@ -261,11 +261,11 @@ const Index = () => {
               </div>
               
               <div className="space-y-6 animate-on-scroll">
-                <ExperienceCard company="United Rentals" role="Product Strategy" period="Dec 2022 - Present" description="Leading CX design for digital platforms to unify our digital ecosystem" logoUrl="/public/placeholder.svg" />
+                <ExperienceCard company="United Rentals" role="Product Strategy" period="Dec 2022 - Present" description="Leading CX design for digital platforms to unify our digital ecosystem" logoUrl="https://pbs.twimg.com/profile_images/1574796503020933120/URb6phDW_200x200.jpg" />
                 
-                <ExperienceCard company="Freelance" role="Product Design" period="July 2022 - October 2023" description="Helped startups with UX/UI improvements, wireframes, prototypes, & websites <br> Projects included: e-Commerce, mobile app, community wellness" logoUrl="/public/placeholder.svg" />
+                <ExperienceCard company="Freelance" role="Product Design" period="July 2022 - October 2023" description="Helped startups with UX/UI improvements, wireframes, prototypes, & websites • Projects included: e-Commerce, mobile app, community wellness" logoUrl="/public/placeholder.svg" />
                 
-                <ExperienceCard company="The Commons Project" role="Product Manager" period="December 2020 - July 2022" description="CommonPass, CommonHealth, CommonCheck COVID-19 verification platform" logoUrl="/public/placeholder.svg" />
+                <ExperienceCard company="The Commons Project" role="Product Manager" period="December 2020 - July 2022" description="CommonPass, CommonHealth, CommonCheck COVID-19 verification platform" logoUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC7J6YeRM8Q3tfTchbuGYxgnEtFM0yzcXpVQ&s" />
                 
                 <ExperienceCard company="Carnegie Mellon University" role="" period="Graduate May 2020" description="Bachelor of Human-Computer Interaction and Architecture, Innovation Scholar: Swartz Center for Entrepreneurship" logoUrl="https://www.nist.gov/sites/default/files/styles/social/public/images/2019/12/23/CMU%20logo.png?itok=h0WYxS17" />
               </div>
