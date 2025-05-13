@@ -251,12 +251,11 @@ const Index = () => {
                 <h2 className="text-3xl font-bold mb-8">Professional experience</h2>
                 <p className="text-neutral-700 mb-8">Driven by a passion for innovation and entrepreneurship, I’ve leveraged design and technology to create impactful solutions from my time at Carnegie Mellon. Leading global health initiatives at The Commons Project, I focused on scaling innovation to address complex challenges. Now, at United Rentals, I bridge strategy, design, and execution to lead teams in building products that drive business growth and inspire leadership.</p>
                 <Button asChild>
-                  <a href="https://drive.google.com/file/d/1ukDsniESoQ-MUZxd3t2fU9YRKQDECgHm/view?usp=share_link"
-                   className="bg-primary-500 hover:bg-primary-600 text-white flex items-center gap-2">
+                  <a href="https://drive.google.com/file/d/1ukDsniESoQ-MUZxd3t2fU9YRKQDECgHm/view?usp=share_link" className="bg-primary-500 hover:bg-primary-600 text-white flex items-center gap-2">
                     See resume
                     {/* <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 10L10 14M10 14L14 10M10 14V4M19 14V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /> 
-                    </svg>*/}
+                     </svg>*/}
                   </a>
                 </Button>
               </div>
