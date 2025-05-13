@@ -259,7 +259,7 @@ Critical for our field users
           
           {/* Full-width Miro board image */}
           <div className="w-full rounded-lg shadow-sm overflow-hidden">
-            <img src={pathForwardImage} alt="Total Control Legacy Feature Inventory Miro board" className="w-full h-auto" />
+            <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/UnitedRentals-Miro.png?raw=true" alt="Total Control Legacy Feature Inventory Miro board" className="w-full h-auto" />
           </div>
         </div>
       </section>
