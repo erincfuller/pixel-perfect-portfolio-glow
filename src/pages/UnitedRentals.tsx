@@ -9,10 +9,11 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 // Import placeholder images 
 import projectImage from '/lovable-uploads/ec29fc27-9e59-40cd-9397-4f4bb2004a79.png';
 import legacyPlatformImage from '/lovable-uploads/58fcb399-a5b1-48ac-a2f4-4f10e03e9881.png';
-import pathForwardImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
+import pathForwardImage from '/lovable-uploads/75dd3cea-e1c7-4a90-a4c5-0f86987799c1.png'; // Updated image
 import featureImage from '/lovable-uploads/2f1b5b20-5794-45be-978a-62682f475af8.png';
 import reflectionImage from '/lovable-uploads/b3297883-aba2-4d3d-95c1-bf85a6c0c6ca.png';
 import blueBackground from '/lovable-uploads/22f618eb-d284-4973-8a58-e5640ce17a75.png';
+
 const UnitedRentals = () => {
   const [api, setApi] = useState<{
     scrollNext: () => void;
@@ -155,7 +156,7 @@ Indicating overall satisfaction
               <div className="animate-on-scroll">
                 <div className="text-3xl md:text-3xl font-bold text-center">100%</div>
                 <div className="text-sm text-neutral-700 text-center">Fully Responsive
-Critical for our field users 
+Critical for our field users 
                 </div>
               </div>
             </div>
@@ -211,28 +212,25 @@ Critical for our field users 
         </div>
       </section>
       
-      {/* Path Forward Section */}
+      {/* Path Forward Section - UPDATED with new image */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="animate-on-scroll mb-4">
-            <div className="uppercase text-primary-500 tracking-wide text-sm font-medium">
-              ROADMAPPING
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <div className="animate-on-scroll">
+              <div className="uppercase text-primary-500 tracking-wide text-sm font-medium">
+                ROADMAPPING
+              </div>
+              <h2 className="text-3xl font-semibold mt-2">Path forward</h2>
             </div>
-            <h2 className="text-3xl font-semibold mt-2">Path forward</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8">
-            <div className="order-2 md:order-1">
-              <img src={pathForwardImage} alt="Path Forward" className="rounded-lg shadow-lg w-full border border-neutral-200" />
-            </div>
-            <div className="animate-on-scroll order-1 md:order-2">
+            
+            <div className="animate-on-scroll">
               <p className="text-neutral-700 mb-8">
                 We moved forward and roadmapping and design with three core objectives
               </p>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-50 flex items-center justify-center text-primary-500">
                     <span>1</span>
                   </div>
                   <p className="text-neutral-800">
@@ -241,20 +239,25 @@ Critical for our field users 
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-50 flex items-center justify-center text-primary-500">
                     <span>2</span>
                   </div>
                   <p className="text-neutral-800">Streamline and enhance UX flows for speed and clarity</p>
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-50 flex items-center justify-center text-primary-500">
                     <span>3</span>
                   </div>
                   <p className="text-neutral-800">Build for scale, mobile use, and future tech integration</p>
                 </div>
               </div>
             </div>
+          </div>
+          
+          {/* Full-width Miro board image */}
+          <div className="w-full rounded-lg shadow-sm overflow-hidden">
+            <img src={pathForwardImage} alt="Total Control Legacy Feature Inventory Miro board" className="w-full h-auto" />
           </div>
         </div>
       </section>
@@ -264,7 +267,7 @@ Critical for our field users 
         <div className="container mx-auto px-4 md:px-8">
           <div className="animate-on-scroll mb-8 max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-semibold">Setting a New Standard</h2>
-            <p className="text-neutral-700 text-sm mt-2">This project marked a turning point for how United Rentals approached product development—shifting from a historically waterfall process to a more iterative, user-centered way of working. I championed new practices like design-to-dev alignment using Figma DevMode, and standing up UAT practice as a standard quality gate. These foundational shifts not only improved this project’s outcomes but also laid the groundwork for a stronger, more agile tech organization moving forward.</p>
+            <p className="text-neutral-700 text-sm mt-2">This project marked a turning point for how United Rentals approached product development—shifting from a historically waterfall process to a more iterative, user-centered way of working. I championed new practices like design-to-dev alignment using Figma DevMode, and standing up UAT practice as a standard quality gate. These foundational shifts not only improved this project's outcomes but also laid the groundwork for a stronger, more agile tech organization moving forward.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
@@ -275,7 +278,7 @@ Critical for our field users 
                 </svg>
               </div>
               <h3 className="font-medium mb-2">Research and Benchmarking</h3>
-              <p className="text-sm text-neutral-700">I preformed competitive and analogous research across leading B2B platforms to understand modern user expectations around speed, accessibility, and interaction patterns. This helped us define a future-ready UX standard that not only caught up to industry leaders but set United Rentals apart in how it serves its enterprise customers.</p>
+              <p className="text-sm text-neutral-700">I preformed competitive and analogous research across leading B2B platforms to understand modern user expectations around speed, accessibility, and interaction patterns. This helped us define a future-ready UX standard that not only caught up to industry leaders but set United Rentals apart in how it serves its enterprise customers.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm animate-on-scroll">
@@ -287,11 +290,11 @@ Critical for our field users 
               <h3 className="font-medium mb-2">Design Workflow Improvement</h3>
               <p className="text-sm text-neutral-700">To ship with confidence and speed, I championed several process improvements that transformed how design and engineering collaborated: 
 
-• Figma DevMode: Streamlined design-to-dev handoffs, giving engineers direct access to specs, tokens, and component logic. 
+• Figma DevMode: Streamlined design-to-dev handoffs, giving engineers direct access to specs, tokens, and component logic. 
 
-• Component-Based Design System: Built out a scalable UI library to ensure consistency across workflows and future features. 
+• Component-Based Design System: Built out a scalable UI library to ensure consistency across workflows and future features. 
 
-• User Acceptance Testing (UAT): Established a formal UAT process—new to United Rentals—to validate every release and prevent regressions before launch.</p>
+• User Acceptance Testing (UAT): Established a formal UAT process—new to United Rentals—to validate every release and prevent regressions before launch.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm animate-on-scroll">
@@ -301,12 +304,12 @@ Critical for our field users 
                 </svg>
               </div>
               <h3 className="font-medium mb-2">Internal and Closed-Beta Pilots </h3>
-              <p className="text-sm text-neutral-700">We kicked off with targeted internal pilots, working directly with our national and strategic account sales reps—the team closest to customer pain points and day-to-day product friction. Their insights helped us quickly validate early concepts, identify high-impact workflows to prioritize, and pressure-test where the legacy experience was breaking down. This early partnership ensured our redesign wasn’t happening in a vacuum, but deeply grounded in real user and customer feedback - also augmented by digital means like surveys and user analytics.</p>
+              <p className="text-sm text-neutral-700">We kicked off with targeted internal pilots, working directly with our national and strategic account sales reps—the team closest to customer pain points and day-to-day product friction. Their insights helped us quickly validate early concepts, identify high-impact workflows to prioritize, and pressure-test where the legacy experience was breaking down. This early partnership ensured our redesign wasn't happening in a vacuum, but deeply grounded in real user and customer feedback - also augmented by digital means like surveys and user analytics.</p>
             </div>
           </div>
         </div>
       </section>
-
+      
       {/* Design Language Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-8">
