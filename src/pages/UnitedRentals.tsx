@@ -3,12 +3,12 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from "../components/ui/button";
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Plus } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../components/ui/carousel";
 
 // Import placeholder images 
 import projectImage from '/lovable-uploads/ec29fc27-9e59-40cd-9397-4f4bb2004a79.png';
-import legacyPlatformImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
+import legacyPlatformImage from '/lovable-uploads/58fcb399-a5b1-48ac-a2f4-4f10e03e9881.png';
 import pathForwardImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
 import featureImage from '/lovable-uploads/2f1b5b20-5794-45be-978a-62682f475af8.png';
 import reflectionImage from '/lovable-uploads/b3297883-aba2-4d3d-95c1-bf85a6c0c6ca.png';
@@ -159,50 +159,48 @@ const UnitedRentals = () => {
       </section>
 
       {/* Challenge Section */}
-      <section className="py-16 bg-neutral-100">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="animate-on-scroll">
-              <div className="text-primary-500 font-medium mb-2 uppercase tracking-wide text-xs">
-                The Challenge
+              <div className="text-primary-500 font-medium mb-2 uppercase tracking-wide">
+                THE OPPORTUNITY
               </div>
-              <h2 className="text-2xl font-semibold mb-4">Outdated legacy platform ripe for transformation</h2>
-              <p className="text-neutral-700 text-sm mb-6">
-                United Rentals faced significant challenges with their digital platforms, including inconsistent user experiences, siloed data, and inefficiencies in the rental process.
+              <h2 className="text-3xl font-semibold mb-4">Outdated legacy platform ripe for transformation</h2>
+              <p className="text-neutral-700 mb-6">
+                TotalControl was a 15+ year-old legacy platform that enterprise customers depended on to manage projects, invoices, and operations. But its outdated, non-responsive interface made critical tasks slow, frustrating, and hard to complete—especially on the go.
               </p>
 
-              <div className="space-y-4">
-                <div className="flex items-start gap-2">
-                  <div className="mt-1 text-primary-500">
-                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="4" cy="4" r="4" fill="currentColor" />
-                    </svg>
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start gap-3">
+                  <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
+                    <Plus size={14} />
                   </div>
-                  <p className="text-sm">Slow performance impacting customer service</p>
+                  <p>Slow, clunky, and visually outdated</p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <div className="mt-1 text-primary-500">
-                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="4" cy="4" r="4" fill="currentColor" />
-                    </svg>
+                <div className="flex items-start gap-3">
+                  <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
+                    <Plus size={14} />
                   </div>
-                  <p className="text-sm">Inconsistent data across multiple platforms</p>
+                  <p>Not mobile responsive — frustrating for field operator</p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <div className="mt-1 text-primary-500">
-                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="4" cy="4" r="4" fill="currentColor" />
-                    </svg>
+                <div className="flex items-start gap-3">
+                  <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
+                    <Plus size={14} />
                   </div>
-                  <p className="text-sm">Difficult user experience for staff</p>
+                  <p>Inefficient workflows leading to delayed task completion</p>
                 </div>
               </div>
+              
+              <p className="text-neutral-700">
+                The mission was clear: Rebuild the experience for modern users — faster, scalable, and ready for the field —without disrupting the workflows that customers had relied on for over a decade.
+              </p>
             </div>
             <div className="relative">
               <div className="bg-blue-600 rounded-lg p-4 relative z-10">
-                <img src={legacyPlatformImage} alt="Legacy Platform" className="rounded-lg shadow-lg w-full" />
+                <img src={legacyPlatformImage} alt="Legacy Platform Screenshot" className="rounded-lg shadow-lg w-full" />
               </div>
-              <div className="absolute bg-blue-500 rounded-lg w-4/5 h-full top-4 left-4 -z-0"></div>
+              <div className="absolute bg-blue-500 rounded-lg w-full h-full top-4 left-4 -z-0"></div>
             </div>
           </div>
         </div>
