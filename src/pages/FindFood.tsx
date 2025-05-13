@@ -109,6 +109,9 @@ const FindFood = () => {
             
             <div className="max-w-4xl mx-auto mb-12 animate-on-scroll">
               <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/FoodBank-StartHero.png?raw=true" alt="Food Finder Interface" className="rounded-lg max-w-full mx-auto" />
+                        <p className="text-neutral-700 mb-12">
+                The Pittsburgh Food Bank launched our redesigned solution in 2021, making it easier for thousands of community members to find food every day. They plan to expand this model to other regional food banks if proven successful.
+              </p>
             </div>
             
             <div className="text-center animate-on-scroll">
