@@ -129,6 +129,9 @@ const UnitedRentals = () => {
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-3xl mx-auto">
             <div className="mb-12 animate-on-scroll text-center">
+              <div className="mb-2">
+                <span className="text-primary-500 uppercase text-sm font-medium tracking-wide">Impact</span>
+              </div>
               <h2 className="text-4xl font-semibold mb-4">At a glance</h2>
               <p className="text-neutral-700 text-sm">This project was a major overhaul, a rethink of how mission-critical users get work done under pressure. The results speak for themselves: faster workflows, happier users, and a system built to evolve.</p>
             </div>
