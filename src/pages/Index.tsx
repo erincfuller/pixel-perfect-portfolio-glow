@@ -121,9 +121,7 @@ const Index = () => {
               </div>
               
               <div className="animate-on-scroll">
-                <div className="mb-4 text-primary-500 uppercase text-sm font-medium tracking-wide">
-                  Featured Work
-                </div>
+                <div className="mb-4 text-primary-500 uppercase text-sm font-medium tracking-wide">2022 - PRESENT</div>
                 <h2 className="text-3xl font-bold mb-4">United Rentals</h2>
                 <p className="text-neutral-700 mb-6">United Rentals is the largest equipment rental company in North America. I led the redesign of Total Control, a fleet management platform with 50K MAU and $9B in assets—modernizing a key tool to improve usability, retention, and operations.</p>
                 
