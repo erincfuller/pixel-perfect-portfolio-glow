@@ -154,7 +154,7 @@ const CommonPass = () => {
                   <div className="flex flex-col gap-6">
                     <div className="flex items-start gap-3">
                       <div className="flex-shrink-0 w-10 h-10 p-1 bg-primary-100 rounded-s">
-                        <img src={standardsIcon} alt="Standards icon" className="w-full h-full" />
+                        <img src={standardsIcon} alt="Standards icon" className="object-contain" />
                       </div>
                       <div>
                         <p className="text-neutral-800">
@@ -169,8 +169,8 @@ const CommonPass = () => {
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-10 h-10">
-                        <img src={funnelIcon} alt="Funnel icon" className="w-full h-full" />
+                      <div className="flex-shrink-0 w-10 h-10 p-1 bg-primary-100 rounded-s">
+                        <img src={funnelIcon} alt="Funnel icon" className="object-contain" />
                       </div>
                       <div>
                         <p className="text-neutral-800">
@@ -182,8 +182,8 @@ const CommonPass = () => {
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-10 h-10">
-                        <img src={playbooksIcon} alt="Playbooks icon" className="w-full h-full" />
+                      <div className="flex-shrink-0 w-10 h-10 p-1 bg-primary-100 rounded-s ">
+                        <img src={playbooksIcon} alt="Playbooks icon" className="object-contain" />
                       </div>
                       <div>
                         <p className="text-neutral-800">
