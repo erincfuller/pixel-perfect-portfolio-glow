@@ -52,7 +52,7 @@ const FindFood = () => {
               </div>
               
               <div className="md:w-1/2 flex justify-center animate-on-scroll">
-                <img src={laptopPhoto} alt="Find Food App on Laptop" className="w-auto h-auto max-w-full rounded-lg object-contain shadow-lg" />
+                <img src="https://foodlinkny.org/wp-content/uploads/2020/11/Twitter-Map-of-Child-Food-Insecurity-1024x512.jpg" alt="Find Food App on Laptop" className="w-auto h-auto max-w-full rounded-lg object-contain shadow-lg" />
               </div>
             </div>
           </div>
