@@ -320,7 +320,7 @@ Critical for our field users
               <div className="text-primary-500 font-medium mb-2 uppercase tracking-wide text-xs">
                 Design System
               </div>
-              <h2 className="text-2xl font-semibold mb-4">New design language for scalability</h2>
+              <h2 className="text-3xl font-semibold mb-4">New design language for scalability</h2>
               <p className="text-neutral-700 text-sm mb-6">
                 We developed a comprehensive design system that accommodates the complex data relationships and workflow needs while maintaining visual clarity.
               </p>
