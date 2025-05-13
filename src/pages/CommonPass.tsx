@@ -132,7 +132,7 @@ const CommonPass = () => {
         </section>
 
         {/* Global Standard Section - Updated with two-column layout */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-neutral-100">
           <div className="container mx-auto px-4 md:px-8">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
               {/* Left Column - 40% */}
@@ -152,7 +152,7 @@ const CommonPass = () => {
                 <div className="mt-10">
                   <h3 className="text-lg font-semibold mb-4 text-neutral-800">My Role</h3>
                   <div className="flex flex-col gap-6">
-                    <div className="flex items-start gap-3">
+                    <div className="flex items-start gap-3 p-2 rounded-s bg-white">
                       <div className="flex-shrink-0 w-10 h-10 p-1 bg-primary-100 rounded-s">
                         <img src={standardsIcon} alt="Standards icon" className="object-contain" />
                       </div>
@@ -168,7 +168,7 @@ const CommonPass = () => {
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3">
+                    <div className="flex items-start gap-3 p-2 rounded-s bg-white">
                       <div className="flex-shrink-0 w-10 h-10 p-1 bg-primary-100 rounded-s">
                         <img src={funnelIcon} alt="Funnel icon" className="object-contain" />
                       </div>
@@ -181,7 +181,7 @@ const CommonPass = () => {
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3">
+                    <div className="flex items-start gap-3 p-2 rounded-s bg-white">
                       <div className="flex-shrink-0 w-10 h-10 p-1 bg-primary-100 rounded-s ">
                         <img src={playbooksIcon} alt="Playbooks icon" className="object-contain" />
                       </div>
