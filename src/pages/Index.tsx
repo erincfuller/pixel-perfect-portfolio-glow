@@ -56,7 +56,7 @@ const Index = () => {
                   </Button>
                 </div>
               </div>
-              <div className="md:w-1/2 relative">
+              <div className="">
                 <img src="/lovable-uploads/ff96fce8-2c39-4da5-b607-1325f7bf72a5.png" alt="Product Strategist" className="Explanation:\nw-full \u2013 full width of parent\nmax-w-[1440px] \u2013 custom max width to match your design\npx-22 \u2013 horizontal padding (22 * 4px = 88px)\npy-10 \u2013 vertical padding (10 * 4px = 40px)\nmx-auto \u2013 center align the container" />
               </div>
             </div>
