@@ -108,7 +108,7 @@ const FindFood = () => {
             </div>
             
             <div className="max-w-4xl mx-auto mb-12 animate-on-scroll">
-              <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/FoodBank-StartHero.png?raw=true" alt="Food Finder Interface" className="rounded-lg shadow-lg max-w-full mx-auto" />
+              <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/FoodBank-StartHero.png?raw=true" alt="Food Finder Interface" className="rounded-lg max-w-full mx-auto" />
             </div>
             
             <div className="text-center animate-on-scroll">
