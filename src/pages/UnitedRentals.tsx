@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -168,43 +167,52 @@ const UnitedRentals = () => {
       {/* Path Forward Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="animate-on-scroll mb-8">
-            <h2 className="text-2xl font-semibold">Path forward</h2>
+          <div className="animate-on-scroll mb-4">
+            <div className="uppercase text-primary-500 tracking-wide text-sm font-medium">
+              ROADMAPPING
+            </div>
+            <h2 className="text-3xl font-semibold mt-2">Path forward</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8">
             <div className="order-2 md:order-1">
               <img 
                 src={pathForwardImage}
                 alt="Path Forward" 
-                className="rounded-lg shadow-lg w-full" 
+                className="rounded-lg shadow-lg w-full border border-neutral-200" 
               />
             </div>
             <div className="animate-on-scroll order-1 md:order-2">
-              <div className="space-y-4">
-                <div className="flex items-start gap-2">
-                  <div className="mt-1 text-primary-500">
-                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="4" cy="4" r="4" fill="currentColor" />
-                    </svg>
+              <p className="text-neutral-700 mb-8">
+                We moved forward and roadmapping and design with three core objectives
+              </p>
+
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
+                    <span>1</span>
                   </div>
-                  <p className="text-sm">Unified tech stack for consistent performance</p>
+                  <p className="text-neutral-800">
+                    Achieve feature parity with the legacy system
+                  </p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <div className="mt-1 text-primary-500">
-                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="4" cy="4" r="4" fill="currentColor" />
-                    </svg>
+                
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
+                    <span>2</span>
                   </div>
-                  <p className="text-sm">Centralized data infrastructure</p>
+                  <p className="text-neutral-800">
+                    Suspendisse varius elementum tristique.
+                  </p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <div className="mt-1 text-primary-500">
-                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="4" cy="4" r="4" fill="currentColor" />
-                    </svg>
+                
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
+                    <span>3</span>
                   </div>
-                  <p className="text-sm">Intuitive interface for quick adoption</p>
+                  <p className="text-neutral-800">
+                    Duis cursus mi quis viverra ut diam libero.
+                  </p>
                 </div>
               </div>
             </div>
