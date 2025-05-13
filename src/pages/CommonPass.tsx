@@ -260,10 +260,35 @@ const CommonPass = () => {
         </section>
 
         {/* My Role Section */}
-        
+        <section className="py-16 bg-neutral-50">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="max-w-3xl mx-auto">
+              <div className="animate-on-scroll">
+                <h2 className="text-2xl font-bold mb-6">My Role</h2>
+                <ul className="space-y-4 list-disc pl-5 text-neutral-700">
+                  <li>Designed UX and visual standards for state and pharmacy partners</li>
+                  <li>Provided <a href="#" className="text-primary-500 hover:underline">Open Source Design File</a> for implementation partners</li>
+                  <li>Led digital funnel design to onboard health systems and labs</li>
+                  <li>Authored launch playbooks for adoption and privacy education</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Impact Section */}
-        
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="max-w-3xl mx-auto text-center">
+              <div className="animate-on-scroll">
+                <h2 className="text-2xl font-bold mb-4">Impact</h2>
+                <p className="text-neutral-700">
+                  The SMART Health Card standard was adopted by over 200 million Americans through state health departments, pharmacies, and healthcare providers. Our digital health cards became accepted verification for entry into Japan, Singapore, and several European countries, establishing a new paradigm for interoperable health credentials.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Scaling Verification Section */}
         <section className="py-16 bg-neutral-50">
