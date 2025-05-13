@@ -9,6 +9,9 @@ import { ArrowUp, FileImage, Filter, MapPin, Users } from "lucide-react";
 // Import placeholder image
 import placeholderImage from '/lovable-uploads/8676a27d-b10d-44c2-99e4-785fed8f1739.png';
 import tabletMockup from '/lovable-uploads/ec0d9b50-4293-44a1-ba1c-37273bd2d428.png';
+// Import the laptop image
+import laptopPhoto from '/lovable-uploads/e9259dd1-294e-4558-a997-87e58f291786.png';
+
 const FindFood = () => {
   useEffect(() => {
     // Scroll to top on page load
@@ -35,41 +38,26 @@ const FindFood = () => {
       <Header />
       <main>
         {/* Section 1: Hero / Project Overview */}
-        <section className="py-16 bg-neutral-50">
+        <section className="py-16 bg-neutral-100 rounded-lg">
           <div className="container mx-auto px-4 md:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-              <div className="animate-on-scroll">
-                <div className="text-primary-500 font-medium mb-2 uppercase tracking-wide text-sm">
-                  Find Food
-                </div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-8">
-                  Empowering Digital Access to Food Resources
-                </h1>
-                <div className="space-y-3">
-                  <div>
-                    <h4 className="text-sm text-neutral-700 mb-1">Project Type</h4>
-                    <p className="font-medium">Case Study</p>
-                  </div>
-                  <div>
-                    <h4 className="text-sm text-neutral-700 mb-1">Client</h4>
-                    <p className="font-medium">Pittsburgh Community Food Bank</p>
-                  </div>
-                  <div>
-                    <h4 className="text-sm text-neutral-700 mb-1">Role</h4>
-                    <p className="font-medium">UX/UI Designer, Design Thinking Consultant</p>
-                  </div>
-                  <div>
-                    <h4 className="text-sm text-neutral-700 mb-1">Timeline</h4>
-                    <p className="font-medium">February 2020 - May 2020</p>
-                  </div>
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="md:w-1/2 space-y-4 animate-on-scroll">
+                <p className="text-primary-500 uppercase text-sm font-semibold">Find Food</p>
+                <h1 className="text-4xl md:text-5xl font-bold">Empowering Digital Access to Food Resources</h1>
+                <div className="space-y-1">
+                  <p><strong>Project Type:</strong> Social Good · Consumer</p>
+                  <p><strong>Client:</strong> The Greater Pittsburgh Community Food Bank</p>
+                  <p><strong>Role:</strong> Product Manager and Designer</p>
+                  <p><strong>Timeline:</strong> Jan 2020 – May 2020</p>
                 </div>
               </div>
               
-              <div className="relative animate-on-scroll">
-                <div className="absolute inset-0 bg-blue-500 rounded-3xl opacity-20 blur-xl"></div>
-                <div className="relative flex justify-center">
-                  <img src={tabletMockup} alt="Find Food Platform" className="max-w-full h-auto z-10 transform rotate-6" />
-                </div>
+              <div className="md:w-1/2 flex justify-center animate-on-scroll">
+                <img 
+                  src={laptopPhoto} 
+                  alt="Find Food App on Laptop" 
+                  className="w-auto h-auto max-w-full rounded-lg object-contain shadow-lg"
+                />
               </div>
             </div>
           </div>
