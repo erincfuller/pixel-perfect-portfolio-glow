@@ -83,7 +83,7 @@ const FindFood = () => {
               </div>
               
               <div className="md:col-span-2 animate-on-scroll">
-                <img src={placeholderImage} alt="Food Insecurity Map" className="rounded-lg shadow-md w-full h-auto" />
+                <img src="https://foodlinkny.org/wp-content/uploads/2020/11/Twitter-Map-of-Child-Food-Insecurity-1024x512.jpg" alt="Food Insecurity Map" className="rounded-lg shadow-md w-full h-auto" />
                 <p className="text-xs text-neutral-500 mt-2 text-right">Source: Feeding America</p>
               </div>
             </div>
