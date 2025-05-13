@@ -287,7 +287,11 @@ Critical for our field users 
               <h3 className="font-medium mb-2">Design Workflow Improvement</h3>
               <p className="text-sm text-neutral-700">To ship with confidence and speed, I championed several process improvements that transformed how design and engineering collaborated: 
 
-• Figma DevMode: Streamlined design-to-dev handoffs, giving engineers direct access to specs, tokens, and component logic. • Component-Based Design System: Built out a scalable UI library to ensure consistency across workflows and future features. • User Acceptance Testing (UAT): Established a formal UAT process—new to United Rentals—to validate every release and prevent regressions before launch.</p>
+• Figma DevMode: Streamlined design-to-dev handoffs, giving engineers direct access to specs, tokens, and component logic. 
+
+• Component-Based Design System: Built out a scalable UI library to ensure consistency across workflows and future features. 
+
+• User Acceptance Testing (UAT): Established a formal UAT process—new to United Rentals—to validate every release and prevent regressions before launch.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm animate-on-scroll">
