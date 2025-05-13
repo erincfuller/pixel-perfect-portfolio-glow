@@ -160,7 +160,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-medium">LinkedIn</h3>
-                        <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline">/li
+                        <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline">https://www.linkedin.com/in/erincfuller
                       </a>
                       </div>
                     </div>
