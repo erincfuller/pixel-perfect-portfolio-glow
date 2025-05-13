@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -13,6 +12,8 @@ import processDiagram from '/lovable-uploads/c9c10c48-7c9b-403d-b9d7-9dc99b9ff8d
 import smartHealthCards from '/lovable-uploads/085f2968-3ca1-4de7-a630-5e1dcc448db3.png';
 // Import verification diagram
 import verificationDiagram from '/lovable-uploads/10bbcafd-2363-40e5-bdc8-c13f79a6dffc.png';
+// Import ecosystem diagram
+import ecosystemDiagram from '/lovable-uploads/c7afbf43-0851-417b-8f75-bd7b640378ef.png';
 
 const CommonPass = () => {
   useEffect(() => {
@@ -208,15 +209,25 @@ const CommonPass = () => {
           </div>
         </section>
 
-        {/* Reflection Section */}
-        <section className="py-16 bg-white">
+        {/* Reflection Section - Updated to two-column layout */}
+        <section className="py-16 bg-neutral-100 rounded-lg">
           <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="animate-on-scroll">
-                <h2 className="text-2xl font-bold mb-4">Reflection</h2>
-                <p className="text-neutral-700">
-                  This project highlighted the importance of ecosystem design, where success depends on aligning multiple stakeholders with different priorities. I learned to translate complex technical requirements into simple human experiences, balancing security with usability in a high-stakes environment where both public health and personal privacy were on the line.
+                <h2 className="text-3xl font-bold mb-6">Reflection</h2>
+                <p className="text-neutral-700 mb-6">
+                  I'm proud to have contributed to building a <span className="font-medium">global standard for digital health</span> that balances <span className="font-medium">user empowerment, privacy, and scale</span>. This experience sharpened my ability to lead <span className="font-medium">ecosystem-level product design</span>, partner with diverse stakeholders, and translate complex systems into <span className="font-medium">simple, usable solutions</span>.
                 </p>
+                <p>
+                  <span className="text-primary-500">Interested in a deeper dive?</span> Contact me for the full case study with additional insights and artifacts.
+                </p>
+              </div>
+              <div className="animate-on-scroll flex justify-center md:justify-end">
+                <img 
+                  src={ecosystemDiagram} 
+                  alt="CommonTrust Network Ecosystem Diagram" 
+                  className="rounded-lg w-full max-w-md"
+                />
               </div>
             </div>
           </div>
