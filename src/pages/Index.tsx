@@ -61,7 +61,7 @@ const Index = () => {
         </section>
 
         {/* About Section */}
-        <section className="py-16 md:py-24 bg-white" id="about">
+        <section id="about" className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4 md:px-8">
             <div className="text-center mb-12 animate-on-scroll">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">A Jill of all trades</h2>
