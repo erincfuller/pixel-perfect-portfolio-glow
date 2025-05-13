@@ -16,7 +16,6 @@ import productManagementIcon from '/lovable-uploads/a7ea2ca0-9a17-4998-967c-6a88
 import commonsProjectLogo from '/lovable-uploads/17e7c264-99c0-4b89-a026-795e5a6c74d4.png';
 import pittsburghFoodbankLogo from '/lovable-uploads/31aae7ce-4943-44e7-8d86-942608478b00.png';
 import tampaWellLogo from '/lovable-uploads/84ef49a6-b49e-464c-be66-f8dd4c9ee882.png';
-
 const Index = () => {
   useEffect(() => {
     // Scroll to top on page load
@@ -181,11 +180,7 @@ const Index = () => {
               {/* The Commons Project Card */}
               <div className="bg-white rounded-lg p-6 shadow-sm flex-1 animate-on-scroll">
                 <div className="mb-4 w-16 h-16 flex items-center justify-center rounded-md bg-neutral-100">
-                  <img 
-                    src={commonsProjectLogo} 
-                    alt="The Commons Project logo" 
-                    className="max-w-[70%] max-h-[70%]" 
-                  />
+                  <img src={commonsProjectLogo} alt="The Commons Project logo" className="max-w-[70%] max-h-[70%]" />
                 </div>
                 
                 <h3 className="text-xl font-medium mb-2">The Commons Project</h3>
@@ -195,13 +190,10 @@ const Index = () => {
                   health verification for international travel.
                 </p>
                 
-                <Link 
-                  to="/projects/common-pass" 
-                  className="inline-flex items-center text-primary-500 font-medium hover:underline"
-                >
+                <Link to="/projects/common-pass" className="inline-flex items-center text-primary-500 font-medium hover:underline">
                   See Case Study
                   <svg className="ml-2 w-4 h-4" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </Link>
               </div>
@@ -209,11 +201,7 @@ const Index = () => {
               {/* Pittsburgh Foodbank Card */}
               <div className="bg-white rounded-lg p-6 shadow-sm flex-1 animate-on-scroll">
                 <div className="mb-4 w-16 h-16 flex items-center justify-center rounded-md bg-neutral-100">
-                  <img 
-                    src={pittsburghFoodbankLogo} 
-                    alt="Pittsburgh Foodbank logo" 
-                    className="max-w-[70%] max-h-[70%]" 
-                  />
+                  <img src={pittsburghFoodbankLogo} alt="Pittsburgh Foodbank logo" className="max-w-[70%] max-h-[70%]" />
                 </div>
                 
                 <h3 className="text-xl font-medium mb-2">Pittsburgh Foodbank</h3>
@@ -223,13 +211,10 @@ const Index = () => {
                   experience that helps food-insecure individuals access up-to-date resources.
                 </p>
                 
-                <Link 
-                  to="/projects/find-food" 
-                  className="inline-flex items-center text-primary-500 font-medium hover:underline"
-                >
+                <Link to="/projects/find-food" className="inline-flex items-center text-primary-500 font-medium hover:underline">
                   See Case Study
                   <svg className="ml-2 w-4 h-4" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </Link>
               </div>
@@ -237,11 +222,7 @@ const Index = () => {
               {/* Tampa Well Card */}
               <div className="bg-white rounded-lg p-6 shadow-sm flex-1 animate-on-scroll">
                 <div className="mb-4 w-16 h-16 flex items-center justify-center rounded-md bg-neutral-100">
-                  <img 
-                    src={tampaWellLogo} 
-                    alt="Tampa Well logo" 
-                    className="max-w-[70%] max-h-[70%]" 
-                  />
+                  <img src={tampaWellLogo} alt="Tampa Well logo" className="max-w-[70%] max-h-[70%]" />
                 </div>
                 
                 <h3 className="text-xl font-medium mb-2">Tampa Well</h3>
@@ -252,13 +233,10 @@ const Index = () => {
                   communities nationwide.
                 </p>
                 
-                <Link 
-                  to="/projects/tamaya-well" 
-                  className="inline-flex items-center text-primary-500 font-medium hover:underline"
-                >
+                <Link to="/projects/tamaya-well" className="inline-flex items-center text-primary-500 font-medium hover:underline">
                   Learn More
                   <svg className="ml-2 w-4 h-4" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </Link>
               </div>
@@ -272,9 +250,7 @@ const Index = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               <div className="animate-on-scroll">
                 <h2 className="text-3xl font-bold mb-8">Professional experience</h2>
-                <p className="text-neutral-700 mb-8">
-                  Driven by a passion for innovation and entrepreneurship, I've leveraged design and technology to create impactful solutions. From my time at Navigate by Common Projects, I focused on creating a platform to address complex civic needs, to leading product strategy, design, and execution to lead teams in building products that make businesses grow and turgen leadership.
-                </p>
+                <p className="text-neutral-700 mb-8">Driven by a passion for innovation and entrepreneurship, I’ve leveraged design and technology to create impactful solutions from my time at Carnegie Mellon. Leading global health initiatives at The Commons Project, I focused on scaling innovation to address complex challenges. Now, at United Rentals, I bridge strategy, design, and execution to lead teams in building products that drive business growth and inspire leadership.</p>
                 <Button asChild>
                   <Link to="#" download={true} className="bg-primary-500 hover:bg-primary-600 text-white flex items-center gap-2">
                     Download resume
