@@ -203,11 +203,11 @@ const CommonPass = () => {
             </div>
 
             {/* Impact Statement - Full Width */}
-            <div className="text-center mt-16 animate-on-scroll">
+            <div className="text-center mt-16 animate-on-scroll ">
               <span className="text-primary-500 uppercase text-sm font-medium tracking-wider">
                 Impact
               </span>
-              <p className="text-neutral-700 mt-4 max-w-3xl mx-auto">
+              <p className="text-neutral-700 mt-4 max-w-3xl mx-auto max-w-xl">
                 As of July 2022, <span className="font-medium">200M+ Americans</span> already have access to SMART Health Cards, now
                 accepted globally in countries like <span className="font-medium">Japan, Aruba, and Rwanda</span>.
               </p>
