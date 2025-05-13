@@ -23,35 +23,29 @@ import smartHealthCardsPhones from '/lovable-uploads/29c3680a-6ab1-4737-a14f-d9a
 import standardsIcon from '/lovable-uploads/1893beb9-94bd-4112-a58d-9d9c2cd39e5b.png';
 import funnelIcon from '/lovable-uploads/1f77d6d0-46eb-43ec-9ccc-2c91aa520971.png';
 import playbooksIcon from '/lovable-uploads/24fba8b3-d957-4e24-982f-4fb91c2fdbf7.png';
-
 const CommonPass = () => {
   useEffect(() => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
-    
+
     // Add scroll animations
     const fadeElements = document.querySelectorAll('.animate-on-scroll');
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-in');
           observer.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.1,
+      threshold: 0.1
     });
-    
-    fadeElements.forEach((el) => {
+    fadeElements.forEach(el => {
       observer.observe(el);
     });
-    
     return () => observer.disconnect();
   }, []);
-
-  return (
-    <>
+  return <>
       <Header />
       <main>
         {/* Hero Section */}
@@ -82,11 +76,7 @@ const CommonPass = () => {
               </div>
             </div>
             <div className="mt-12">
-              <img 
-                src={projectImage} 
-                alt="CommonPass Mobile Application" 
-                className="rounded-lg shadow-lg w-full"
-              />
+              <img src={projectImage} alt="CommonPass Mobile Application" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </section>
@@ -134,11 +124,7 @@ const CommonPass = () => {
                   As the pandemic evolved, my role expanded from creating the initial COVID-19 test verification experience to building a comprehensive system for vaccine verification. I led the design of digital SMART Health Cards that could be securely stored on mobile devices and verified at borders, establishing an interoperable global standard.
                 </p>
                 <div className="mt-8 mb-4">
-                  <img 
-                    src={processDiagram} 
-                    alt="CommonPass Verification Process" 
-                    className="rounded-lg w-full"
-                  />
+                  <img src={processDiagram} alt="CommonPass Verification Process" className="rounded-lg w-full" />
                 </div>
               </div>
             </div>
@@ -167,7 +153,7 @@ const CommonPass = () => {
                   <h3 className="text-lg font-semibold mb-4 text-neutral-800">My Role</h3>
                   <div className="flex flex-col gap-6">
                     <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-10 h-10">
+                      <div className="flex-shrink-0 w-10 h-10 p-1 bg-primary-100 rounded-s">
                         <img src={standardsIcon} alt="Standards icon" className="w-full h-full" />
                       </div>
                       <div>
@@ -212,11 +198,7 @@ const CommonPass = () => {
 
               {/* Right Column - 60% */}
               <div className="md:col-span-7 flex justify-center items-center animate-on-scroll">
-                <img 
-                  src={smartHealthCardsPhones} 
-                  alt="SMART Health Cards on mobile devices showing verification states" 
-                  className="w-full max-w-xl rounded-lg"
-                />
+                <img src={smartHealthCardsPhones} alt="SMART Health Cards on mobile devices showing verification states" className="w-full max-w-xl rounded-lg" />
               </div>
             </div>
 
@@ -274,11 +256,7 @@ const CommonPass = () => {
                   I designed the CommonCheck verifier app to enable airlines and border officials to quickly validate travelers' health credentials against entry requirements. This solution was deployed at major international airports and border crossings, helping to safely process millions of travelers during the pandemic recovery.
                 </p>
                 <div className="mt-8 mb-4">
-                  <img 
-                    src={verificationDiagram} 
-                    alt="CommonCheck Verification System" 
-                    className="rounded-lg w-full"
-                  />
+                  <img src={verificationDiagram} alt="CommonCheck Verification System" className="rounded-lg w-full" />
                 </div>
               </div>
             </div>
@@ -299,11 +277,7 @@ const CommonPass = () => {
                 </p>
               </div>
               <div className="animate-on-scroll flex justify-center md:justify-end">
-                <img 
-                  src={ecosystemDiagram} 
-                  alt="CommonTrust Network Ecosystem Diagram" 
-                  className="rounded-lg w-full max-w-md"
-                />
+                <img src={ecosystemDiagram} alt="CommonTrust Network Ecosystem Diagram" className="rounded-lg w-full max-w-md" />
               </div>
             </div>
           </div>
@@ -325,26 +299,16 @@ const CommonPass = () => {
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-3xl mx-auto">
               <div className="flex flex-wrap items-center justify-center gap-4">
-                <a 
-                  href="https://thecommonsproject.org/commonpass" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-primary-500 hover:underline flex items-center gap-2"
-                >
+                <a href="https://thecommonsproject.org/commonpass" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline flex items-center gap-2">
                   CommonPass Website
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </a>
-                <a 
-                  href="https://thecommonsproject.org" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-primary-500 hover:underline flex items-center gap-2"
-                >
+                <a href="https://thecommonsproject.org" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline flex items-center gap-2">
                   The Commons Project
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </a>
               </div>
@@ -360,7 +324,7 @@ const CommonPass = () => {
               <Link to="/projects/find-food" className="bg-primary-500 hover:bg-primary-600 text-white flex items-center gap-2 w-fit mx-auto">
                 View Find Food Project
                 <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </Link>
             </Button>
@@ -368,8 +332,6 @@ const CommonPass = () => {
         </section>
       </main>
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default CommonPass;
