@@ -263,7 +263,7 @@ const Index = () => {
               <div className="space-y-6 animate-on-scroll">
                 <ExperienceCard company="United Rentals" role="Product Strategy" period="Dec 2022 - Present" description="Leading CX design for digital platforms to unify our digital ecosystem" logoUrl="/public/placeholder.svg" />
                 
-                <ExperienceCard company="Freelance" role="Product Design" period="July 2022 - October 2023" description="Helped startups with UX/UI improvements, wireframes, prototypes, & websites <br>Projects included: e-Commerce, mobile app, community wellness" logoUrl="/public/placeholder.svg" />
+                <ExperienceCard company="Freelance" role="Product Design" period="July 2022 - October 2023" description="Helped startups with UX/UI improvements, wireframes, prototypes, & websites (m-1) Projects included: e-Commerce, mobile app, community wellness" logoUrl="/public/placeholder.svg" />
                 
                 <ExperienceCard company="The Commons Project" role="Product Manager" period="December 2020 - July 2022" description="CommonPass, CommonHealth, CommonCheck COVID-19 verification platform" logoUrl="/public/placeholder.svg" />
                 
