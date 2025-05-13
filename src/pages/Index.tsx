@@ -178,7 +178,7 @@ const Index = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="animate-on-scroll">
-                <ProjectCard title="The Commons Project" description="Design, collaborate on, and bootstrap CommonHealth, a private digital wallet for health records, about-to-launch in US" imageUrl="/lovable-uploads/c059cbb7-5411-45c8-877c-81902f0effe9.png" link="/projects/common-pass" />
+                <ProjectCard title="The Commons Project" description="Designed scalable solutions for CommonPass—navigating a rapidly evolving global health landscape to streamline digital health verification for international travel." imageUrl="/lovable-uploads/c059cbb7-5411-45c8-877c-81902f0effe9.png" link="/projects/common-pass" />
               </div>
               
               <div className="animate-on-scroll">
