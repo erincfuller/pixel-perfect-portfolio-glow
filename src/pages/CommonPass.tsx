@@ -3,6 +3,9 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from "../components/ui/button";
 import { Link } from 'react-router-dom';
+import { Card } from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
+import { FileText, ChevronRight, Users, Shield } from "lucide-react";
 
 // Import main project image
 import projectImage from '/lovable-uploads/7d8833a2-f336-4886-88d4-1a02fde3f482.png';
@@ -14,6 +17,12 @@ import smartHealthCards from '/lovable-uploads/085f2968-3ca1-4de7-a630-5e1dcc448
 import verificationDiagram from '/lovable-uploads/10bbcafd-2363-40e5-bdc8-c13f79a6dffc.png';
 // Import ecosystem diagram
 import ecosystemDiagram from '/lovable-uploads/c7afbf43-0851-417b-8f75-bd7b640378ef.png';
+// Import SMART Health Cards phones image
+import smartHealthCardsPhones from '/lovable-uploads/29c3680a-6ab1-4737-a14f-d9aa359d0586.png';
+// Import role icons
+import standardsIcon from '/lovable-uploads/1893beb9-94bd-4112-a58d-9d9c2cd39e5b.png';
+import funnelIcon from '/lovable-uploads/1f77d6d0-46eb-43ec-9ccc-2c91aa520971.png';
+import playbooksIcon from '/lovable-uploads/24fba8b3-d957-4e24-982f-4fb91c2fdbf7.png';
 
 const CommonPass = () => {
   useEffect(() => {
@@ -136,23 +145,90 @@ const CommonPass = () => {
           </div>
         </section>
 
-        {/* Global Standard Section */}
+        {/* Global Standard Section - Updated with two-column layout */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-3xl mx-auto">
-              <div className="animate-on-scroll">
-                <h2 className="text-2xl font-bold mb-4">Creating a Global Standard for Health Credentials</h2>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+              {/* Left Column - 40% */}
+              <div className="md:col-span-5 animate-on-scroll">
+                <span className="text-primary-500 uppercase text-sm font-medium tracking-wider">
+                  Creating a Global Standard for Health Credentials
+                </span>
+                <h2 className="text-3xl font-bold my-4">
+                  Leading Ecosystem Design: SMART Health Cards
+                </h2>
                 <p className="text-neutral-700 mb-8">
-                  I contributed to the adoption of SMART Health Cards as an open-source standard by designing a verification ecosystem that balanced security with ease of use. This work helped establish a globally recognized framework for digital health credentials that was eventually adopted by governments and healthcare providers worldwide.
+                  As vaccinations scaled, we tackled a bigger challenge: building an interoperable standard to
+                  unify digital health records. SMART Health Cards became the open-source framework
+                  adopted by 900+ partners including Apple, Microsoft, and leading health systems.
                 </p>
-                <div className="mt-8 mb-4">
-                  <img 
-                    src={smartHealthCards} 
-                    alt="SMART Health Cards on Mobile Devices" 
-                    className="rounded-lg shadow-md w-full"
-                  />
+
+                <div className="mt-10">
+                  <h3 className="text-lg font-semibold mb-4 text-neutral-800">My Role</h3>
+                  <div className="flex flex-col gap-6">
+                    <div className="flex items-start gap-3">
+                      <div className="flex-shrink-0 w-10 h-10">
+                        <img src={standardsIcon} alt="Standards icon" className="w-full h-full" />
+                      </div>
+                      <div>
+                        <p className="text-neutral-800">
+                          Designed <span className="font-medium">reference UX and visual standards</span> adopted by state health
+                          departments for states like <span className="font-medium">California and Louisiana</span>, and major national pharmacies like
+                          <span className="font-medium"> CVS and Walmart</span>.
+                        </p>
+                        <a href="#" className="text-primary-500 hover:underline mt-1 inline-block">
+                          Open Source Design File →
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <div className="flex-shrink-0 w-10 h-10">
+                        <img src={funnelIcon} alt="Funnel icon" className="w-full h-full" />
+                      </div>
+                      <div>
+                        <p className="text-neutral-800">
+                          Led <span className="font-medium">digital funnel design</span> to onboard health
+                          systems, labs, and pharmacies into the <span className="font-medium">CommonTrust Network</span>, ensuring
+                          adoption pathways were clear and user-friendly.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <div className="flex-shrink-0 w-10 h-10">
+                        <img src={playbooksIcon} alt="Playbooks icon" className="w-full h-full" />
+                      </div>
+                      <div>
+                        <p className="text-neutral-800">
+                          Authored <span className="font-medium">launch playbooks</span> to help partners
+                          drive user adoption and explain the privacy-preserving technology behind the cards.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              {/* Right Column - 60% */}
+              <div className="md:col-span-7 flex justify-center items-center animate-on-scroll">
+                <img 
+                  src={smartHealthCardsPhones} 
+                  alt="SMART Health Cards on mobile devices showing verification states" 
+                  className="w-full max-w-xl rounded-lg"
+                />
+              </div>
+            </div>
+
+            {/* Impact Statement - Full Width */}
+            <div className="text-center mt-16 animate-on-scroll">
+              <span className="text-primary-500 uppercase text-sm font-medium tracking-wider">
+                Impact
+              </span>
+              <p className="text-neutral-700 mt-4 max-w-3xl mx-auto">
+                As of July 2022, <span className="font-medium">200M+ Americans</span> already have access to SMART Health Cards, now
+                accepted globally in countries like <span className="font-medium">Japan, Aruba, and Rwanda</span>.
+              </p>
             </div>
           </div>
         </section>
