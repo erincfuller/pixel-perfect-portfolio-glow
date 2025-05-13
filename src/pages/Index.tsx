@@ -120,9 +120,7 @@ const Index = () => {
                   Featured Work
                 </div>
                 <h2 className="text-3xl font-bold mb-4">United Rentals</h2>
-                <p className="text-neutral-700 mb-6">
-                  United Rentals is the largest equipment rental company in North America. I led the roles of a PM, Customer Success lead, and implemented optimizations to make our CRM faster and improve customer experience.
-                </p>
+                <p className="text-neutral-700 mb-6">United Rentals is the largest equipment rental company in North America. I led the redesign of Total Control, a fleet management platform with 50K MAU and $9B in assets—modernizing a key tool to improve usability, retention, and operations.</p>
                 
                 <ul className="mb-8 space-y-3">
                   <li className="flex items-start">
@@ -131,7 +129,7 @@ const Index = () => {
                         <circle cx="8" cy="8" r="8" fill="currentColor" />
                       </svg>
                     </div>
-                    <span>Lorem ipsum dolor sit amet consectetur.</span>
+                    <span>Clunky and outdated → seamless workflows</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 text-primary-500 mt-1">
@@ -139,7 +137,7 @@ const Index = () => {
                         <circle cx="8" cy="8" r="8" fill="currentColor" />
                       </svg>
                     </div>
-                    <span>Suspendisse ut leo elementum tristique.</span>
+                    <span>Poor responsiveness → accessible on the go</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 text-primary-500 mt-1">
@@ -147,7 +145,7 @@ const Index = () => {
                         <circle cx="8" cy="8" r="8" fill="currentColor" />
                       </svg>
                     </div>
-                    <span>Duis cursus mi quis viverra ut diam lobortis.</span>
+                    <span>Time suck → time saved</span>
                   </li>
                 </ul>
                 
