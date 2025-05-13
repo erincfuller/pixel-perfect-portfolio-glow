@@ -330,7 +330,7 @@ Critical for our field users
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-[url('https://github.com/erincfuller/erincfuller.github.io/blob/main/Building1.png?raw=true')] bg-cover bg-center aspect-[3/4] rounded-lg"></div>
-              <div className="bg-red-100 aspect-square rounded-lg"></div>
+              <div className="bg-[url('https://github.com/erincfuller/erincfuller.github.io/blob/main/Building2.png?raw=true')] bg-cover bg-center aspect-[3/4] rounded-lg"></div>
               
               
             </div>
