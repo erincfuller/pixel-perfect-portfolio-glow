@@ -127,7 +127,7 @@ const About = () => {
           </div>
         </section>
 
-        {/* Professional Philosophy */}
+        {/* Professional Philosophy 
         <section className="py-16 bg-neutral-50">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-3xl mx-auto">
@@ -157,7 +157,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Contact CTA */}
         <section className="py-16 bg-white">
