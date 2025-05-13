@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "../components/ui/button";
@@ -8,6 +9,10 @@ import ExperienceCard from '../components/ExperienceCard';
 
 // Import placeholder images for now
 import profileImage from '/lovable-uploads/be434163-26fb-460e-924d-88c4f9ff34c8.png';
+import productStrategyIcon from '/lovable-uploads/7b2b20da-40fb-40fd-9c39-600e3392c01a.png';
+import productDesignIcon from '/lovable-uploads/2b49d7e1-5c44-4716-bc78-b6a66d9178d0.png';
+import productManagementIcon from '/lovable-uploads/a7ea2ca0-9a17-4998-967c-6a88c27e6469.png';
+
 const Index = () => {
   useEffect(() => {
     // Scroll to top on page load
@@ -61,49 +66,44 @@ const Index = () => {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-16 md:py-24 bg-white">
-          <div className="container mx-auto px-4 md:px-8\np-16">
+        <section id="about" className="py-16 md:py-24 bg-neutral-100">
+          <div className="container mx-auto px-4 md:px-8">
             <div className="text-center mb-12 animate-on-scroll">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">A Jill of all trades</h2>
-              <p className="text-neutral-700 max-w-2xl mx-auto">
-                I'm a hybrid product leader who combines strategy, design, and execution to build customer-first products that drive user, team, revenue growth and purpose.
+              <p className="text-neutral-700 max-w-3xl mx-auto mb-16">
+                I'm a hybrid product leader who bridges strategy, design, and execution to build customer-first products that drive business growth and empower teams to deliver with clarity and purpose.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-              <div className="bg-neutral-50 p-6 rounded-lg animate-on-scroll">
-                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21 16V8.00002C21 6.4087 20.3679 4.88259 19.2426 3.75738C18.1174 2.63217 16.5913 2.00002 15 2.00002H9C7.4087 2.00002 5.88258 2.63217 4.75736 3.75738C3.63214 4.88259 3 6.4087 3 8.00002V16C3 17.5913 3.63214 19.1174 4.75736 20.2427C5.88258 21.3679 7.4087 22 9 22H15C16.5913 22 18.1174 21.3679 19.2426 20.2427C20.3679 19.1174 21 17.5913 21 16Z" stroke="#FF7D5F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M3 8H21" stroke="#FF7D5F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M7 12H17" stroke="#FF7D5F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M7 16H17" stroke="#FF7D5F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white p-6 rounded-lg animate-on-scroll">
+                <div className="w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center mb-4">
+                  <img src={productStrategyIcon} alt="Product Strategy" className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Product Strategy</h3>
-                <p className="text-neutral-700">Using research to define customer, competition, and business needs to identify feature work, prioritize roadmaps, and define go-to-market strategies.</p>
+                <p className="text-neutral-700">
+                  I bring a strategic mindset to product development, consistently aligning cross-functional teams around clear business goals, customer insights, and data-driven roadmaps.
+                </p>
               </div>
               
-              <div className="bg-neutral-50 p-6 rounded-lg animate-on-scroll">
-                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 7L12 2L22 7V17L12 22L2 17V7Z" stroke="#FF7D5F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M2 7L12 12L22 7" stroke="#FF7D5F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M12 12V22" stroke="#FF7D5F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+              <div className="bg-white p-6 rounded-lg animate-on-scroll">
+                <div className="w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center mb-4">
+                  <img src={productDesignIcon} alt="Product Design" className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Product Design</h3>
-                <p className="text-neutral-700">With a background in traditional and UX design, I can create and direct wireframes, prototypes, UI, and UX for web and mobile products.</p>
+                <p className="text-neutral-700">
+                  With a foundation in product design, I champion user-centered thinking to craft intuitive experiences that balance usability with business impact.
+                </p>
               </div>
               
-              <div className="bg-neutral-50 p-6 rounded-lg animate-on-scroll">
-                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 8V16M12 11V16M8 14V16M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z" stroke="#FF7D5F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+              <div className="bg-white p-6 rounded-lg animate-on-scroll">
+                <div className="w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center mb-4">
+                  <img src={productManagementIcon} alt="Product Management" className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Product Management</h3>
-                <p className="text-neutral-700">Leading agile engineering teams, coordinating cross-functional stakeholders, and communicating with leadership to get effective, on-time products shipped.</p>
+                <p className="text-neutral-700">
+                  I lead with clarity and empathy, driving execution through collaboration, stakeholder alignment, and a bias for action across the product lifecycle.
+                </p>
               </div>
             </div>
           </div>
