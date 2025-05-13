@@ -11,7 +11,6 @@ import placeholderImage from '/lovable-uploads/8676a27d-b10d-44c2-99e4-785fed8f1
 import tabletMockup from '/lovable-uploads/ec0d9b50-4293-44a1-ba1c-37273bd2d428.png';
 // Import the laptop image
 import laptopPhoto from '/lovable-uploads/e9259dd1-294e-4558-a997-87e58f291786.png';
-
 const FindFood = () => {
   useEffect(() => {
     // Scroll to top on page load
@@ -53,11 +52,7 @@ const FindFood = () => {
               </div>
               
               <div className="md:w-1/2 flex justify-center animate-on-scroll">
-                <img 
-                  src={laptopPhoto} 
-                  alt="Find Food App on Laptop" 
-                  className="w-auto h-auto max-w-full rounded-lg object-contain shadow-lg"
-                />
+                <img src={laptopPhoto} alt="Find Food App on Laptop" className="w-auto h-auto max-w-full rounded-lg object-contain shadow-lg" />
               </div>
             </div>
           </div>
@@ -96,7 +91,7 @@ const FindFood = () => {
         </section>
 
         {/* Section 3: The Solution */}
-        <section className="py-16 bg-neutral-50">
+        <section className="py-16 bg-neutral-100\n">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-3xl mx-auto text-center animate-on-scroll">
               <div className="text-primary-500 font-medium mb-2 uppercase tracking-wide text-sm">
