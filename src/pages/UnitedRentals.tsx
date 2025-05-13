@@ -7,11 +7,12 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../components/ui/carousel";
 
 // Import placeholder images 
-import projectImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
+import projectImage from '/lovable-uploads/ec29fc27-9e59-40cd-9397-4f4bb2004a79.png';
 import legacyPlatformImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
 import pathForwardImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
 import featureImage from '/lovable-uploads/2f1b5b20-5794-45be-978a-62682f475af8.png';
 import reflectionImage from '/lovable-uploads/b3297883-aba2-4d3d-95c1-bf85a6c0c6ca.png';
+import blueBackground from '/lovable-uploads/22f618eb-d284-4973-8a58-e5640ce17a75.png';
 
 const UnitedRentals = () => {
   const [api, setApi] = useState<{
@@ -83,36 +84,42 @@ const UnitedRentals = () => {
     <Header />
     <main className="overflow-hidden">
       {/* Project Hero Section */}
-      <section className="pt-16 pb-16 bg-white">
+      <section className="py-16 bg-neutral-100">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="mb-2">
-            <span className="text-primary-500 uppercase text-xs">Case Study</span>
-          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-3xl md:text-4xl font-semibold mb-4">
+            <div className="animate-on-scroll">
+              <div className="mb-2">
+                <span className="text-primary-500 uppercase text-sm font-medium tracking-wide">United Rentals</span>
+              </div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 leading-tight">
                 Rebuilding a legacy fleet management platform for speed, clarity, and scale
               </h1>
-              <div className="grid grid-cols-1 gap-1 mb-4">
-                <div className="flex gap-2 text-sm">
-                  <span className="font-medium">Project Team:</span>
-                  <span>Lead Product Strategist</span>
+              <div className="space-y-2 text-neutral-700">
+                <div className="flex gap-2">
+                  <span className="font-medium">Project Type:</span>
+                  <span>B2B · Construction Tech</span>
                 </div>
-                <div className="flex gap-2 text-sm">
-                  <span className="font-medium">Client:</span>
-                  <span>United Rentals</span>
+                <div className="flex gap-2">
+                  <span className="font-medium">Role:</span>
+                  <span>Product Strategist and Designer</span>
                 </div>
-                <div className="flex gap-2 text-sm">
+                <div className="flex gap-2">
                   <span className="font-medium">Timeline:</span>
-                  <span>December 2022 - Present</span>
+                  <span>Jan 2023 – Present</span>
+                </div>
+                <div className="flex gap-2">
+                  <span className="font-medium">Product:</span>
+                  <span>Total Control®</span>
                 </div>
               </div>
             </div>
             <div className="relative">
-              <div className="bg-blue-600 rounded-lg p-4 relative z-10">
-                <img src={projectImage} alt="United Rentals Dashboard" className="rounded-lg shadow-lg w-full" />
+              <div className="absolute inset-0 w-full h-full bg-blue-600 rounded-2xl overflow-hidden">
+                <img src={blueBackground} alt="Blue background" className="w-full h-full object-cover" />
               </div>
-              <div className="absolute bg-blue-500 rounded-lg w-4/5 h-full top-4 left-4 -z-0"></div>
+              <div className="relative z-10 transform -rotate-6 hover:scale-105 transition-transform duration-300">
+                <img src={projectImage} alt="United Rentals Dashboard on Tablet" className="w-full drop-shadow-2xl" />
+              </div>
             </div>
           </div>
         </div>
