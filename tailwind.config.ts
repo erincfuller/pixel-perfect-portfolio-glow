@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'albert': ['"Albert Sans"', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -26,7 +30,14 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					50: '#FFE5DC',
+					100: '#FFD1C4',
+					200: '#FFBBAA',
+					300: '#FFA792',
+					400: '#FF9278',
+					500: '#FF7D5F',
+					600: '#FF6846',
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -61,7 +72,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				neutral: {
+					50: '#FFFFFF',
+					100: '#F8F9FC',
+					200: '#F2F4FC',
+					700: '#828294',
+					800: '#5C5C6F',
+					900: '#303044',
+					1000: '#111125',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
