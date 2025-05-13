@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "../components/ui/button";
@@ -12,7 +11,6 @@ import profileImage from '/lovable-uploads/be434163-26fb-460e-924d-88c4f9ff34c8.
 import productStrategyIcon from '/lovable-uploads/7b2b20da-40fb-40fd-9c39-600e3392c01a.png';
 import productDesignIcon from '/lovable-uploads/2b49d7e1-5c44-4716-bc78-b6a66d9178d0.png';
 import productManagementIcon from '/lovable-uploads/a7ea2ca0-9a17-4998-967c-6a88c27e6469.png';
-
 const Index = () => {
   useEffect(() => {
     // Scroll to top on page load
@@ -78,7 +76,7 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg animate-on-scroll">
                 <div className="w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center mb-4">
-                  <img src={productStrategyIcon} alt="Product Strategy" className="w-8 h-8" />
+                  <img src={productStrategyIcon} alt="Product Strategy" className="w-16 h-16" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Product Strategy</h3>
                 <p className="text-neutral-700">
@@ -88,7 +86,7 @@ const Index = () => {
               
               <div className="bg-white p-6 rounded-lg animate-on-scroll">
                 <div className="w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center mb-4">
-                  <img src={productDesignIcon} alt="Product Design" className="w-8 h-8" />
+                  <img src={productDesignIcon} alt="Product Design" className="w-16 h-16" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Product Design</h3>
                 <p className="text-neutral-700">
@@ -98,7 +96,7 @@ const Index = () => {
               
               <div className="bg-white p-6 rounded-lg animate-on-scroll">
                 <div className="w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center mb-4">
-                  <img src={productManagementIcon} alt="Product Management" className="w-8 h-8" />
+                  <img src={productManagementIcon} alt="Product Management" className="w-16 h-16" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Product Management</h3>
                 <p className="text-neutral-700">
