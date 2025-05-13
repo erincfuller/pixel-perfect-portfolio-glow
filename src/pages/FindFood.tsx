@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -10,35 +9,29 @@ import { ArrowUp, FileImage, Filter, MapPin, Users } from "lucide-react";
 // Import placeholder image
 import placeholderImage from '/lovable-uploads/8676a27d-b10d-44c2-99e4-785fed8f1739.png';
 import tabletMockup from '/lovable-uploads/ec0d9b50-4293-44a1-ba1c-37273bd2d428.png';
-
 const FindFood = () => {
   useEffect(() => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
-    
+
     // Add scroll animations
     const fadeElements = document.querySelectorAll('.animate-on-scroll');
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-in');
           observer.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.1,
+      threshold: 0.1
     });
-    
-    fadeElements.forEach((el) => {
+    fadeElements.forEach(el => {
       observer.observe(el);
     });
-    
     return () => observer.disconnect();
   }, []);
-
-  return (
-    <>
+  return <>
       <Header />
       <main>
         {/* Section 1: Hero / Project Overview */}
@@ -75,11 +68,7 @@ const FindFood = () => {
               <div className="relative animate-on-scroll">
                 <div className="absolute inset-0 bg-blue-500 rounded-3xl opacity-20 blur-xl"></div>
                 <div className="relative flex justify-center">
-                  <img 
-                    src={tabletMockup} 
-                    alt="Find Food Platform" 
-                    className="max-w-full h-auto z-10 transform rotate-6"
-                  />
+                  <img src={tabletMockup} alt="Find Food Platform" className="max-w-full h-auto z-10 transform rotate-6" />
                 </div>
               </div>
             </div>
@@ -111,11 +100,7 @@ const FindFood = () => {
               </div>
               
               <div className="md:col-span-2 animate-on-scroll">
-                <img 
-                  src={placeholderImage} 
-                  alt="Food Insecurity Map" 
-                  className="rounded-lg shadow-md w-full h-auto"
-                />
+                <img src={placeholderImage} alt="Food Insecurity Map" className="rounded-lg shadow-md w-full h-auto" />
                 <p className="text-xs text-neutral-500 mt-2 text-right">Source: Feeding America</p>
               </div>
             </div>
@@ -140,11 +125,7 @@ const FindFood = () => {
             </div>
             
             <div className="max-w-4xl mx-auto mb-12 animate-on-scroll">
-              <img 
-                src={tabletMockup} 
-                alt="Food Finder Interface" 
-                className="rounded-lg shadow-lg max-w-full mx-auto"
-              />
+              <img src={tabletMockup} alt="Food Finder Interface" className="rounded-lg shadow-lg max-w-full mx-auto" />
             </div>
             
             <div className="text-center animate-on-scroll">
@@ -270,20 +251,12 @@ const FindFood = () => {
             {/* Images Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-on-scroll">
               <div className="aspect-video bg-white p-4 rounded-lg">
-                <img 
-                  src={placeholderImage} 
-                  alt="Desktop user testing session" 
-                  className="rounded w-full h-full object-cover"
-                />
+                <img src={placeholderImage} alt="Desktop user testing session" className="rounded w-full h-full object-cover" />
                 <p className="mt-2 text-sm text-neutral-700 text-center">User testing the core prototypes</p>
               </div>
               
               <div className="aspect-video bg-white p-4 rounded-lg">
-                <img 
-                  src={placeholderImage} 
-                  alt="Mobile prototypes" 
-                  className="rounded w-full h-full object-cover"
-                />
+                <img src={placeholderImage} alt="Mobile prototypes" className="rounded w-full h-full object-cover" />
                 <p className="mt-2 text-sm text-neutral-700 text-center">Mobile prototypes for testing</p>
               </div>
             </div>
@@ -343,8 +316,6 @@ const FindFood = () => {
         </section>
       </main>
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default FindFood;
