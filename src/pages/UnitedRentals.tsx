@@ -1,16 +1,29 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from "../components/ui/button";
 import { Link } from 'react-router-dom';
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../components/ui/carousel";
 
 // Import placeholder images 
 import projectImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
 import legacyPlatformImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
 import pathForwardImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
-import featureImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
+import featureImage from '/lovable-uploads/2f1b5b20-5794-45be-978a-62682f475af8.png';
 import reflectionImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
+
 const UnitedRentals = () => {
+  const [api, setApi] = useState<{ scrollNext: () => void; scrollPrev: () => void } | null>(null);
+  const [current, setCurrent] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
   useEffect(() => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
@@ -32,6 +45,58 @@ const UnitedRentals = () => {
     });
     return () => observer.disconnect();
   }, []);
+
+  // Set up carousel autoplay
+  useEffect(() => {
+    if (isPaused || !api) return;
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [api, isPaused]);
+
+  // Track current slide
+  useEffect(() => {
+    if (!api) return;
+
+    const handleSelect = () => {
+      // Get current index from embla carousel
+      const emblaApi = (api as any).carouselRef?.current?.emblaApi;
+      if (emblaApi) {
+        const selectedIndex = emblaApi.selectedScrollSnap();
+        setCurrent(selectedIndex);
+      }
+    };
+
+    // Add event listeners
+    (api as any).on?.("select", handleSelect);
+    
+    return () => {
+      (api as any).off?.("select", handleSelect);
+    };
+  }, [api]);
+
+  // Create dot indicators 
+  const dotIndicators = [0, 1, 2].map((idx) => (
+    <button 
+      key={idx} 
+      onClick={() => {
+        if (!api) return;
+        // Logic to scroll to specific slide
+        const emblaApi = (api as any).carouselRef?.current?.emblaApi;
+        if (emblaApi) {
+          emblaApi.scrollTo(idx);
+        }
+      }}
+      className={`w-2 h-2 rounded-full mx-1 transition-all duration-300 ${
+        current === idx ? "bg-primary-500 scale-125" : "bg-neutral-300"
+      }`}
+      aria-label={`Go to slide ${idx + 1}`}
+    />
+  ));
+
   return <>
     <Header />
     <main className="overflow-hidden">
@@ -276,34 +341,60 @@ const UnitedRentals = () => {
       {/* Feature Highlights */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="animate-on-scroll mb-12">
-            <h2 className="text-2xl font-semibold">Feature Highlights</h2>
+          <div className="animate-on-scroll mb-12 text-center">
+            <h2 className="text-3xl font-semibold">Feature Highlights</h2>
           </div>
           
-          <div className="relative">
-            <div className="bg-blue-600 rounded-lg p-6 relative z-10">
-              <img src={featureImage} alt="Feature Highlights" className="rounded-lg w-full" />
-              
-              {/* Feature callouts */}
-              <div className="absolute -left-3 top-1/4 flex items-center">
-                <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center">
-                  <span className="text-white text-xs">1</span>
-                </div>
-                <div className="ml-2 bg-white p-3 rounded-lg shadow-lg max-w-xs">
-                  <p className="text-xs font-medium">Real-time fleet updates</p>
-                  <p className="text-xs text-neutral-600">Track equipment status and location instantly</p>
-                </div>
-              </div>
-              
-              <div className="absolute -right-3 top-1/3 flex items-center">
-                <div className="mr-2 bg-white p-3 rounded-lg shadow-lg max-w-xs text-right">
-                  <p className="text-xs font-medium">Maintenance scheduling</p>
-                  <p className="text-xs text-neutral-600">Automated alerts and maintenance tracking</p>
-                </div>
-                <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center">
-                  <span className="text-white text-xs">2</span>
-                </div>
-              </div>
+          <div className="relative"
+               onMouseEnter={() => setIsPaused(true)}
+               onMouseLeave={() => setIsPaused(false)}>
+            <Carousel 
+              className="w-full max-w-5xl mx-auto"
+              setApi={setApi}
+              opts={{
+                align: "center",
+                loop: true,
+              }}
+            >
+              <CarouselContent className="h-[400px] sm:h-[500px] md:h-[600px]">
+                <CarouselItem>
+                  <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
+                    <img 
+                      src={featureImage} 
+                      alt="Real-time fleet dashboard" 
+                      className="object-cover rounded-xl w-full h-full"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
+                    <img 
+                      src={featureImage} 
+                      alt="Equipment management system" 
+                      className="object-cover rounded-xl w-full h-full"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
+                    <img 
+                      src={featureImage} 
+                      alt="Maintenance scheduling interface" 
+                      className="object-cover rounded-xl w-full h-full"
+                    />
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious 
+                className="h-12 w-12 border-none bg-primary-500 text-white opacity-0 hover:opacity-100 transition-all duration-300 hover:scale-105 left-4 md:left-2" 
+              />
+              <CarouselNext 
+                className="h-12 w-12 border-none bg-primary-500 text-white opacity-0 hover:opacity-100 transition-all duration-300 hover:scale-105 right-4 md:right-2" 
+              />
+            </Carousel>
+            
+            <div className="flex justify-center mt-6 space-x-2">
+              {dotIndicators}
             </div>
           </div>
         </div>
