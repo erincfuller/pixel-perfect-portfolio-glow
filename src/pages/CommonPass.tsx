@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -32,7 +31,6 @@ import govIcon from '/lovable-uploads/c3c5d9fd-0412-4525-bc20-b87ed9a1b70c.png';
 import dataIcon from '/lovable-uploads/1350de9f-3aea-469d-bb80-fb429249265c.png';
 import testingIcon from '/lovable-uploads/676fe7ec-e36f-487b-9273-1e9eaafe55ce.png';
 import usersIcon from '/lovable-uploads/610511a5-0fb6-4076-9e08-83f6909db426.png';
-
 const CommonPass = () => {
   useEffect(() => {
     // Scroll to top on page load
@@ -100,12 +98,8 @@ const CommonPass = () => {
               </div>
               
               {/* Right Column - Ecosystem Visual */}
-              <div className="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
-                <img 
-                  src={ecosystemVisual} 
-                  alt="CommonPass Ecosystem with SMART Health Card" 
-                  className="w-full max-w-lg object-contain"
-                />
+              <div className="w-full md:w-1 flex justify-center items-center mt-6 md:mt-0">
+                <img src={ecosystemVisual} alt="CommonPass Ecosystem with SMART Health Card" className="w-full max-w-lg object-contain" />
               </div>
             </div>
           </div>
@@ -115,7 +109,7 @@ const CommonPass = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-16 text-center">
             <p className="text-primary-500 uppercase text-sm mb-2">Overview</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Building Digital Health Infrastructure<br/>for Global Reopening</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Building Digital Health Infrastructure<br />for Global Reopening</h2>
             <p className="max-w-3xl mx-auto text-neutral-700 mb-12">
               The Commons Project, backed by the World Economic Forum and the Rockefeller Foundation, builds solutions that empower people to manage and share their health data. In less than three years, the team launched a suite of products to address safe travel and health data verification during COVID-19.
             </p>
