@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -7,35 +6,29 @@ import { Link } from 'react-router-dom';
 
 // Import placeholder image
 import projectImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58a0e.png';
-
 const UnitedRentals = () => {
   useEffect(() => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
-    
+
     // Add scroll animations
     const fadeElements = document.querySelectorAll('.animate-on-scroll');
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-in');
           observer.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.1,
+      threshold: 0.1
     });
-    
-    fadeElements.forEach((el) => {
+    fadeElements.forEach(el => {
       observer.observe(el);
     });
-    
     return () => observer.disconnect();
   }, []);
-
-  return (
-    <>
+  return <>
       <Header />
       <main>
         {/* Project Hero Section */}
@@ -62,11 +55,7 @@ const UnitedRentals = () => {
               </div>
             </div>
             <div className="mt-12">
-              <img 
-                src={projectImage} 
-                alt="United Rentals Dashboard" 
-                className="rounded-lg shadow-lg w-full"
-              />
+              <img src={projectImage} alt="United Rentals Dashboard" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </section>
@@ -85,7 +74,7 @@ const UnitedRentals = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 my-12">
                 <div className="animate-on-scroll">
                   <div className="text-3xl md:text-4xl font-bold">↑40%</div>
-                  <div className="text-sm text-neutral-700">Platform efficiency</div>
+                  <div className="text-sm text-neutral-700">Platform</div>
                 </div>
                 <div className="animate-on-scroll">
                   <div className="text-3xl md:text-4xl font-bold">3x</div>
@@ -122,7 +111,7 @@ const UnitedRentals = () => {
                 <div className="flex items-start">
                   <div className="mr-3 text-primary-500 mt-1">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="8" cy="8" r="8" fill="currentColor"/>
+                      <circle cx="8" cy="8" r="8" fill="currentColor" />
                     </svg>
                   </div>
                   <p>Slow performance impacting customer service</p>
@@ -130,7 +119,7 @@ const UnitedRentals = () => {
                 <div className="flex items-start">
                   <div className="mr-3 text-primary-500 mt-1">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="8" cy="8" r="8" fill="currentColor"/>
+                      <circle cx="8" cy="8" r="8" fill="currentColor" />
                     </svg>
                   </div>
                   <p>Inconsistent data across multiple platforms</p>
@@ -138,7 +127,7 @@ const UnitedRentals = () => {
                 <div className="flex items-start">
                   <div className="mr-3 text-primary-500 mt-1">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="8" cy="8" r="8" fill="currentColor"/>
+                      <circle cx="8" cy="8" r="8" fill="currentColor" />
                     </svg>
                   </div>
                   <p>Difficult user experience for staff</p>
@@ -205,7 +194,7 @@ const UnitedRentals = () => {
               <Link to="/projects/common-pass" className="bg-primary-500 hover:bg-primary-600 text-white flex items-center gap-2 w-fit mx-auto">
                 View CommonPass Project
                 <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </Link>
             </Button>
@@ -213,8 +202,6 @@ const UnitedRentals = () => {
         </section>
       </main>
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default UnitedRentals;
