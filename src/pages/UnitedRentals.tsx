@@ -129,31 +129,31 @@ const UnitedRentals = () => {
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-3xl mx-auto">
             <div className="mb-12 animate-on-scroll text-center">
-              <h2 className="text-2xl font-semibold mb-4">At a glance</h2>
+              <h2 className="text-4xl font-semibold mb-4">At a glance</h2>
               <p className="text-neutral-700 text-sm">This project was a major overhaul, a rethink of how mission-critical users get work done under pressure. The results speak for themselves: faster workflows, happier users, and a system built to evolve.</p>
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 my-12 bg-neutral-100 px-8 md:p-8 rounded-lg">
               <div className="animate-on-scroll">
-                <div className="text-2xl md:text-3xl font-bold">↓ 40%</div>
+                <div className="text-3xl md:text-3xl font-bold">↓ 40%</div>
                 <div className="text-sm text-neutral-700">Time to pay metric
 Indicating improved UX
                 </div>
               </div>
               <div className="animate-on-scroll">
-                <div className="text-2xl md:text-3xl font-bold">↑ 3x</div>
+                <div className="text-3xl md:text-3xl font-bold">↑ 3x</div>
                 <div className="text-sm text-neutral-700 ">Customer Completed payments
 Indicating flow efficiency
                 </div>
               </div>
               <div className="animate-on-scroll">
-                <div className="text-2xl md:text-3xl font-bold">↓ 60%</div>
+                <div className="text-3xl md:text-3xl font-bold">↓ 60%</div>
                 <div className="text-sm text-neutral-700">Rage clicks
 Indicating overall satisfaction
                 </div>
               </div>
               <div className="animate-on-scroll">
-                <div className="text-2xl md:text-3xl font-bold">100%</div>
+                <div className="text-3xl md:text-3xl font-bold">100%</div>
                 <div className="text-sm text-neutral-700">Fully Responsive
 Critical for our field users 
                 </div>
