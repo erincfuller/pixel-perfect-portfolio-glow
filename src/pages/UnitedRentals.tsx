@@ -13,7 +13,6 @@ import pathForwardImage from '/lovable-uploads/df9b97a3-b6c1-4b95-ac46-c0ca28c58
 import featureImage from '/lovable-uploads/2f1b5b20-5794-45be-978a-62682f475af8.png';
 import reflectionImage from '/lovable-uploads/b3297883-aba2-4d3d-95c1-bf85a6c0c6ca.png';
 import blueBackground from '/lovable-uploads/22f618eb-d284-4973-8a58-e5640ce17a75.png';
-
 const UnitedRentals = () => {
   const [api, setApi] = useState<{
     scrollNext: () => void;
@@ -131,27 +130,33 @@ const UnitedRentals = () => {
           <div className="max-w-3xl mx-auto">
             <div className="mb-12 animate-on-scroll text-center">
               <h2 className="text-2xl font-semibold mb-4">At a glance</h2>
-              <p className="text-neutral-700 text-sm">
-                As the largest equipment rental company in North America, United Rentals needed a streamlined platform to manage their vast inventory and improve customer experience.
-              </p>
+              <p className="text-neutral-700 text-sm">This project was a major overhaul, a rethink of how mission-critical users get work done under pressure. The results speak for themselves: faster workflows, happier users, and a system built to evolve.</p>
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 my-12">
               <div className="animate-on-scroll">
-                <div className="text-2xl md:text-3xl font-bold">↑40%</div>
-                <div className="text-sm text-neutral-700">Platform</div>
+                <div className="text-2xl md:text-3xl font-bold">↓ 40%</div>
+                <div className="text-sm text-neutral-700">Time to pay metric
+Indicating improved UX
+                </div>
               </div>
               <div className="animate-on-scroll">
-                <div className="text-2xl md:text-3xl font-bold">3x</div>
-                <div className="text-sm text-neutral-700">Customer satisfaction</div>
+                <div className="text-2xl md:text-3xl font-bold">↑ 3x</div>
+                <div className="text-sm text-neutral-700 ">Customer Completed payments
+Indicating flow efficiency
+                </div>
               </div>
               <div className="animate-on-scroll">
-                <div className="text-2xl md:text-3xl font-bold">↑60%</div>
-                <div className="text-sm text-neutral-700">Data load completion</div>
+                <div className="text-2xl md:text-3xl font-bold">↓ 60%</div>
+                <div className="text-sm text-neutral-700">Rage clicks
+Indicating overall satisfaction
+                </div>
               </div>
               <div className="animate-on-scroll">
                 <div className="text-2xl md:text-3xl font-bold">100%</div>
-                <div className="text-sm text-neutral-700">API compatibility</div>
+                <div className="text-sm text-neutral-700">Fully Responsive
+Critical for our field users 
+                </div>
               </div>
             </div>
           </div>
@@ -176,19 +181,19 @@ const UnitedRentals = () => {
                   <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
                     <Plus size={14} />
                   </div>
-                  <p>Slow, clunky, and visually outdated</p>
+                  <p className="">Slow, clunky, and visually outdated</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
                     <Plus size={14} />
                   </div>
-                  <p>Not mobile responsive — frustrating for field operator</p>
+                  <p className="">Not mobile responsive — frustrating for field operator</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
                     <Plus size={14} />
                   </div>
-                  <p>Inefficient workflows leading to delayed task completion</p>
+                  <p className="">Inefficient workflows leading to delayed task completion</p>
                 </div>
               </div>
               
@@ -239,18 +244,14 @@ const UnitedRentals = () => {
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
                     <span>2</span>
                   </div>
-                  <p className="text-neutral-800">
-                    Suspendisse varius elementum tristique.
-                  </p>
+                  <p className="text-neutral-800">Streamline and enhance UX flows for speed and clarity</p>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-500">
                     <span>3</span>
                   </div>
-                  <p className="text-neutral-800">
-                    Duis cursus mi quis viverra ut diam libero.
-                  </p>
+                  <p className="text-neutral-800">Build for scale, mobile use, and future tech integration</p>
                 </div>
               </div>
             </div>
@@ -384,11 +385,7 @@ const UnitedRentals = () => {
               </div>
               <div className="md:col-span-2 relative">
                 <div className="bg-blue-600 rounded-lg p-4 relative z-10 transform md:translate-x-4">
-                  <img 
-                    src={reflectionImage} 
-                    alt="Notification Journey mobile UI" 
-                    className="rounded-lg shadow-lg w-full object-cover" 
-                  />
+                  <img src={reflectionImage} alt="Notification Journey mobile UI" className="rounded-lg shadow-lg w-full object-cover" />
                 </div>
               </div>
             </div>
