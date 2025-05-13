@@ -129,7 +129,7 @@ const Index = () => {
                         <circle cx="8" cy="8" r="8" fill="currentColor" />
                       </svg>
                     </div>
-                    <span>Clunky and outdated → seamless workflows</span>
+                    <span className="">Clunky and outdated → seamless workflows</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 text-primary-500 mt-1">
@@ -137,7 +137,7 @@ const Index = () => {
                         <circle cx="8" cy="8" r="8" fill="currentColor" />
                       </svg>
                     </div>
-                    <span>Poor responsiveness → accessible on the go</span>
+                    <span className="">Poor responsiveness → accessible on the go</span>
                   </li>
                   <li className="flex items-start">
                     <div className="mr-3 text-primary-500 mt-1">
@@ -145,7 +145,7 @@ const Index = () => {
                         <circle cx="8" cy="8" r="8" fill="currentColor" />
                       </svg>
                     </div>
-                    <span>Time suck → time saved</span>
+                    <span className="">Time suck → time saved</span>
                   </li>
                 </ul>
                 
