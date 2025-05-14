@@ -163,6 +163,9 @@ const CommonPass = () => {
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-3xl mx-auto">
               <div className="animate-on-scroll">
+               <span className="text-primary-500 uppercase text-sm font-medium tracking-wider">
+                 Setting the Stage
+                </span>
                 <h2 className="text-2xl font-bold mb-4">Solving for Travel Safety</h2>
                 <p className="text-neutral-700 mb-8">
                   As the pandemic evolved, my role expanded from creating the initial COVID-19 test verification experience to building a comprehensive system for vaccine verification. I led the design of digital SMART Health Cards that could be securely stored on mobile devices and verified at borders, establishing an interoperable global standard.
@@ -178,10 +181,8 @@ const CommonPass = () => {
         {/* Global Standard Section - Updated with two-column layout */}
         <section className="py-16 bg-neutral-100">
           <div className="container mx-auto px-4 md:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-              {/* Left Column - 40% */}
-              <div className="md:col-span-5 animate-on-scroll">
-                <span className="text-primary-500 uppercase text-sm font-medium tracking-wider">
+            <div className="container mx-auto px-4 md:px-16 text-center">
+                  <span className="text-primary-500 uppercase text-sm font-medium tracking-wider">
                   Creating a Global Standard for Health Credentials
                 </span>
                 <h2 className="text-3xl font-bold my-4">
@@ -192,6 +193,13 @@ const CommonPass = () => {
                   unify digital health records. SMART Health Cards became the open-source framework
                   adopted by 900+ partners including Apple, Microsoft, and leading health systems.
                 </p>
+            </div>
+
+            
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+              {/* Left Column - 40% */}
+              <div className="md:col-span-5 animate-on-scroll">
+        
 
                 <div className="mt-10">
                   <h3 className="text-lg font-semibold mb-4 text-neutral-800">My Role</h3>
