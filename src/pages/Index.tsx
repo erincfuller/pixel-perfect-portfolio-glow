@@ -52,12 +52,12 @@ const Index = () => {
                 </h1>
                 <div className="mb-8">
                   <Button asChild>
-                    <Link to="/contact" className="bg-primary-500 hover:bg-primary-600 text-white flex items-center gap-2">
+                    <a href="www.linkedin.com/in/erincfuller" className="bg-primary-500 hover:bg-primary-600 text-white flex items-center gap-2">
                       Let's connect
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
-                    </Link>
+                    </a>
                   </Button>
                 </div>
               </div>
