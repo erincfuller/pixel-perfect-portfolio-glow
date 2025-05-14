@@ -237,12 +237,12 @@ const FindFood = () => {
             {/* Images Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-on-scroll">
               <div className="aspect-video bg-top bg-white p-4 rounded-lg border">
-                <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Foodbank-usertest.png?raw=true" alt="Desktop user testing session" className="rounded w-full h-full object-cover" />
+                <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Foodbank-usertest.png?raw=true" alt="Desktop user testing session" className="rounded w-full h-full object-cover border" />
                 <p className="mt-2 text-sm text-neutral-700 text-center">User testing the core prototypes</p>
               </div>
               
-              <div className="object-top bg-white p-4 rounded-lg border">
-                <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Foodbank-mobiletest.png?raw=true" alt="Mobile prototypes" className="rounded w-full h-full object-cover" />
+              <div className="aspect-video object-top bg-white p-4 rounded-lg border">
+                <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Foodbank-mobiletest.png?raw=true" alt="Mobile prototypes" className="rounded w-full h-full" />
                 <p className="mt-2 text-sm text-neutral-700 text-center">Mobile prototypes for testing</p>
               </div>
             </div>
