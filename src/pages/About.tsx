@@ -57,7 +57,7 @@ const About = () => {
                 <img 
                   src="https://www.erinfuller.com/lovable-uploads/ff96fce8-2c39-4da5-b607-1325f7bf72a5.png" 
                   alt="Product Strategist Portrait" 
-                  className="rounded-lg shadow-lg w-full max-w-md mx-auto"
+                  className="rounded-lg w-full max-w-md mx-auto"
                 />
               </div>
             </div>
