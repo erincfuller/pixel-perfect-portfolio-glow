@@ -353,17 +353,17 @@ const UnitedRentals = () => {
               <CarouselContent className="h-[400px] sm:h-[500px] md:h-[600px]">
                 <CarouselItem>
                   <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
-                    <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Feature3.png" alt="Real-time fleet dashboard" className="object-cover rounded-xl w-full h-full" />
+                    <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Feature3.png?raw=true" alt="Real-time fleet dashboard" className="object-cover rounded-xl w-full h-full" />
                   </div>
                 </CarouselItem>
                 <CarouselItem>
                   <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
-                    <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Feature1.png" alt="Equipment management" className="object-cover rounded-xl w-full h-full" />
+                    <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Feature1.png?raw=true" alt="Equipment management" className="object-cover rounded-xl w-full h-full" />
                   </div>
                 </CarouselItem>
                 <CarouselItem>
                   <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
-                    <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Feature2.png" alt="Invoice Management" className="object-cover rounded-xl w-full h-full" />
+                    <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Feature2.png?raw=true" alt="Invoice Management" className="object-cover rounded-xl w-full h-full" />
                   </div>
                 </CarouselItem>
               </CarouselContent>
