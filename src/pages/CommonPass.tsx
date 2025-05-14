@@ -254,7 +254,7 @@ const CommonPass = () => {
               </div>
             </div>
 
-            {/* Impact Statement - Full Width */}
+            {/* Impact Statement - Full Width 
             <div className="text-center mt-16 animate-on-scroll ">
               <span className="text-primary-500 uppercase text-sm font-medium tracking-wider">
                 Impact
@@ -265,9 +265,9 @@ const CommonPass = () => {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* My Role Section */}
+        {/* My Role Section 
         <section className="py-16 bg-neutral-50">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-3xl mx-auto">
@@ -282,7 +282,7 @@ const CommonPass = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Impact Section */}
         <section className="py-16 bg-white">
