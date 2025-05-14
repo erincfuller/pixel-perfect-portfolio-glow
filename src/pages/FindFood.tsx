@@ -271,7 +271,7 @@ const FindFood = () => {
               </div>
               
               <div className="md:col-span-1 animate-on-scroll">
-                <Card className="p-6 bg-neutral-50 border-0">
+                <Card className="p-6 bg-neutral-50 border-0 span-2\n">
                   <p className="text-lg italic mb-4">
                     "So many people come to me to ask 'How do I get help? Where do I go? Who to contact?' 
                     This redesign will really help them find the answers themselves."
