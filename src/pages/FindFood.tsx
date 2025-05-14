@@ -241,8 +241,8 @@ const FindFood = () => {
                 <p className="mt-2 text-sm text-neutral-700 text-center">User testing the core prototypes</p>
               </div>
               
-              <div className="aspect-video object-top bg-white p-4 rounded-lg border">
-                <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Foodbank-mobiletest.png?raw=true" alt="Mobile prototypes" className="rounded w-full h-full" />
+              <div className="aspect-video object-contain object-top bg-white p-4 rounded-lg border">
+                <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Foodbank-mobiletest.png?raw=true" alt="Mobile prototypes" className="rounded w-full h-full object-top" />
                 <p className="mt-2 text-sm text-neutral-700 text-center">Mobile prototypes for testing</p>
               </div>
             </div>
