@@ -335,16 +335,7 @@ const CommonPass = () => {
           </div>
         </section>
 
-        {/* Contact CTA */}
-        <section className="py-12 bg-neutral-100">
-          <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="text-neutral-800 font-medium">
-                Interested in a deeper dive? <a href="/contact" className="text-primary-500 hover:underline">Contact me</a> for the full case study with additional insights and artifacts.
-              </p>
-            </div>
-          </div>
-        </section>
+
 
         {/* External Links */}
         <section className="py-8 bg-white">
