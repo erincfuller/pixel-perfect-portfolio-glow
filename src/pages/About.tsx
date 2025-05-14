@@ -127,81 +127,57 @@ const About = () => {
           </div>
         </section>
 
-        {/* Professional Philosophy 
+        {/* Contact Information */}
         <section className="py-16 bg-neutral-50">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-3xl mx-auto">
-              <div className="text-center mb-12 animate-on-scroll">
-                <h2 className="text-3xl md:text-4xl font-bold">My Professional Philosophy</h2>
-              </div>
-              
-              <div className="space-y-6 mt-12 animate-on-scroll">
-                <p className="text-neutral-700">
-                  I believe that the most successful products are born at the intersection of user needs, business goals, and technological feasibility. My approach centers around deeply understanding user problems before jumping to solutions.
-                </p>
+              <div className="animate-on-scroll">
+                <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
                 
-                <p className="text-neutral-700">
-                  I'm committed to inclusive design practices that ensure products are accessible to all users, regardless of ability or context. By embracing a data-informed approach, I ground decisions in evidence while leaving room for creative exploration.
-                </p>
-                
-                <p className="text-neutral-700">
-                  Throughout my career, I've found that cross-functional collaboration leads to the most innovative outcomes. By creating environments where diverse perspectives are valued, we can build products that truly resonate with users while driving business success.
-                </p>
-              </div>
-              
-              <div className="mt-12 p-8 bg-white rounded-lg shadow-sm animate-on-scroll">
-                <blockquote className="italic text-neutral-700 mb-4">
-                  "Design is not just what it looks like and feels like. Design is how it works."
-                </blockquote>
-                <p className="text-right font-medium">— Steve Jobs</p>
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="mr-4 text-primary-500">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8L10.7829 13.5215C11.5 14 12.5 14 13.2171 13.5215L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-medium">Email</h3>
+                      <a href="mailto:erincfuller@gmail.com" className="text-primary-500 hover:underline">erincfuller@gmail.com</a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="mr-4 text-primary-500">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 13V6C21 4.89543 20.1046 4 19 4H5C3.89543 4 3 4.89543 3 6V13M21 13V18C21 19.1046 20.1046 20 19 20H5C3.89543 20 3 19.1046 3 18V13M21 13H3M10 8H14M9 16H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-medium">LinkedIn</h3>
+                      <a href="https://www.linkedin.com/in/erincfuller" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline">linkedin.com/in/erincfuller</a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="mr-4 text-primary-500">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9896 14.5C13.3768 14.5 14.5 13.3768 14.5 11.9896C14.5 10.6024 13.3768 9.47922 11.9896 9.47922C10.6024 9.47922 9.47922 10.6024 9.47922 11.9896C9.47922 13.3768 10.6024 14.5 11.9896 14.5Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M11.99 5C15.979 5 19.5 7.58 19.5 12C19.5 16.42 15.979 19 11.99 19C8.00098 19 4.5 16.42 4.5 12C4.5 9.88 5.50526 8 7.34338 6.71" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-medium">Based In</h3>
+                      <p>New York City</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
-
-
-                        <div className="animate-on-scroll">
-                  <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-                  
-                  <div className="space-y-6">
-                    <div className="flex items-start">
-                      <div className="mr-4 text-primary-500">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M3 8L10.7829 13.5215C11.5 14 12.5 14 13.2171 13.5215L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="font-medium">Email</h3>
-                        <a href="mailto:erincfuller@gmail.com" className="text-primary-500 hover:underline">erincfuller@gmail.com</a>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start">
-                      <div className="mr-4 text-primary-500">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M21 13V6C21 4.89543 20.1046 4 19 4H5C3.89543 4 3 4.89543 3 6V13M21 13V18C21 19.1046 20.1046 20 19 20H5C3.89543 20 3 19.1046 3 18V13M21 13H3M10 8H14M9 16H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="font-medium">LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/erincfuller" target="_blank" rel="noopener noreferrer" className="text-primary-500 hover:underline">linkedin.com/in/erincfuller</a>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start">
-                      <div className="mr-4 text-primary-500">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M11.9896 14.5C13.3768 14.5 14.5 13.3768 14.5 11.9896C14.5 10.6024 13.3768 9.47922 11.9896 9.47922C10.6024 9.47922 9.47922 10.6024 9.47922 11.9896C9.47922 13.3768 10.6024 14.5 11.9896 14.5Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                          <path d="M11.99 5C15.979 5 19.5 7.58 19.5 12C19.5 16.42 15.979 19 11.99 19C8.00098 19 4.5 16.42 4.5 12C4.5 9.88 5.50526 8 7.34338 6.71" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="font-medium">Based In</h3>
-                        <p>New York City</p>
-
-
-        {/* Contact CTA */}                        
+        {/* Contact CTA - Commented Out */}
         {/* <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-3xl mx-auto text-center animate-on-scroll">
