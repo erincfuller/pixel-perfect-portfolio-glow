@@ -38,9 +38,9 @@ const Header: React.FC = () => {
           <Link to="/#work" className="animated-underline text-neutral-900 hover:text-primary-500 transition-colors">
             Work
           </Link>
-          <Link to="/contact" className="animated-underline text-neutral-900 hover:text-primary-500 transition-colors">
+         {/*  <Link to="/contact" className="animated-underline text-neutral-900 hover:text-primary-500 transition-colors">
             Contact
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Mobile menu button */}
@@ -98,7 +98,7 @@ const Header: React.FC = () => {
                 className="px-4 py-3 hover:bg-neutral-100"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Contact
+                {/* Contact */}
               </Link>
             </div>
           </div>
