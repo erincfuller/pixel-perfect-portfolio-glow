@@ -47,7 +47,7 @@ const About = () => {
                   About Me
                 </h1>
                 <p className="text-neutral-700 mb-6">
-                  I'm a product strategist with over 10 years of experience building user-centered digital products. My unique background in both design and business allows me to bridge the gap between user needs and business objectives.
+                  I'm a product strategist with over 5 years of experience building user-centered digital products. My unique background in both design and business allows me to bridge the gap between user needs and business objectives.
                 </p>
                 <p className="text-neutral-700">
                   I specialize in transforming complex challenges into intuitive digital solutions that drive measurable results.
