@@ -139,26 +139,26 @@ const UnitedRentals = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 my-12 bg-neutral-100 px-8 md:p-8 rounded-lg">
               <div className="animate-on-scroll">
                 <div className="text-3xl md:text-3xl font-bold text-center">↓ 40%</div>
-                <div className="text-sm text-neutral-700 text-center">Time to pay metric 
-                  <p>Indicating improved UX</p>
+                <div className="text-sm text-neutral-700 text-center font-bold">Time to pay metric 
+                  <p className="font-light">Indicating improved UX</p>
                 </div>
               </div>
               <div className="animate-on-scroll">
                 <div className="text-3xl md:text-3xl font-bold text-center">↑ 3x</div>
-                <div className="text-sm text-neutral-700 text-center">Customer completed payments
-                  <p>Indicating flow efficiency</p>
+                <div className="text-sm text-neutral-700 text-center font-bold">Customer completed payments
+                  <p className="font-light">Indicating flow efficiency</p>
                 </div>
               </div>
               <div className="animate-on-scroll">
                 <div className="text-3xl md:text-3xl font-bold text-center">↓ 60%</div>
-                <div className="text-sm text-neutral-700 text-center">Rage clicks
-                  <p>Indicating overall satisfaction</p>
+                <div className="text-sm text-neutral-700 text-center font-bold">Rage clicks
+                  <p className="font-light">Indicating overall satisfaction</p>
                 </div>
               </div>
               <div className="animate-on-scroll">
                 <div className="text-3xl md:text-3xl font-bold text-center">100%</div>
-                <div className="text-sm text-neutral-700 text-center">Fully Responsive
-                  <p>Critical for our field users</p>
+                <div className="text-sm text-neutral-700 text-center font-bold">Fully Responsive
+                  <p className="font-light">Critical for our field users</p>
                 </div>
               </div>
             </div>
@@ -272,7 +272,7 @@ const UnitedRentals = () => {
                 Proccess & Approach
               </div>
             <h2 className="text-3xl font-semibold">Setting a New Standard</h2>
-            <p className="text-neutral-700 text-sm mt-2">This project marked a turning point for how United Rentals approached product development—shifting from a historically waterfall process to a more iterative, user-centered way of working. I championed new practices like design-to-dev alignment using Figma DevMode, and standing up UAT practice as a standard quality gate. These foundational shifts not only improved this project's outcomes but also laid the groundwork for a stronger, more agile tech organization moving forward.</p>
+            <p className="text-neutral-700  mt-2">This project marked a turning point for how United Rentals approached product development—shifting from a historically waterfall process to a more iterative, user-centered way of working. I championed new practices like design-to-dev alignment using Figma DevMode, and standing up UAT practice as a standard quality gate. These foundational shifts not only improved this project's outcomes but also laid the groundwork for a stronger, more agile tech organization moving forward.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
