@@ -253,7 +253,7 @@ const FindFood = () => {
         <section className="py-16 bg-white border-t border-neutral-200">
           <div className="container mx-auto px-4 md:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 p-6 bg-neutral-100 rounded-l">
-              <div className="md:col-span-2 animate-on-scroll">
+              <div className="w-1/2 animate-on-scroll">
                 <div className="text-primary-500 font-medium mb-2 uppercase tracking-wide text-sm">
                   Reflection
                 </div>
