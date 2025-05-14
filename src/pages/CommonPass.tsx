@@ -214,7 +214,7 @@ const CommonPass = () => {
                           departments for states like <span className="font-medium">California and Louisiana</span>, and major national pharmacies like
                           <span className="font-medium"> CVS and Walmart</span>.
                         </p>
-                        <a href="#" className="text-primary-500 hover:underline mt-1 inline-block">
+                        <a href="https://www.figma.com/community/file/969941235839543745" className="text-primary-500 hover:underline mt-1 inline-block">
                           Open Source Design File →
                         </a>
                       </div>
