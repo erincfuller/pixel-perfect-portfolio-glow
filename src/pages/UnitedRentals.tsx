@@ -352,23 +352,23 @@ const UnitedRentals = () => {
             }}>
               <CarouselContent className="h-[400px] sm:h-[500px] md:h-[600px]">
                 <CarouselItem>
-                  <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
+                  <div className="h-full w-full   flex items-center justify-center">
                     <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Feature3.png?raw=true" alt="Real-time fleet dashboard" className="object-contain rounded-xl w-full h-full" />
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
+                  <div className="h-full w-full flex items-center justify-center">
                     <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Feature1.png?raw=true" alt="Equipment management" className="object-contain rounded-xl w-full h-full" />
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="h-full w-full bg-primary-50 rounded-xl flex items-center justify-center">
+                  <div className="h-full w-full flex items-center justify-center">
                     <img src="https://github.com/erincfuller/erincfuller.github.io/blob/main/Feature2.png?raw=true" alt="Invoice Management" className="object-contain rounded-xl w-full h-full" />
                   </div>
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious className="h-12 w-12 border-none bg-primary-500 text-white opacity-0 hover:opacity-100 transition-all duration-300 hover:scale-105 left-4 md:left-2" />
-              <CarouselNext className="h-12 w-12 border-none bg-primary-500 text-white opacity-0 hover:opacity-100 transition-all duration-300 hover:scale-105 right-4 md:right-2" />
+              <CarouselPrevious className="h-12 w-12 border-none bg-primary-500 text-white opacity-50 hover:opacity-100 transition-all duration-300 hover:scale-105 left-4 md:left-2" />
+              <CarouselNext className="h-12 w-12 border-none bg-primary-500 text-white opacity-50 hover:opacity-100 transition-all duration-300 hover:scale-105 right-4 md:right-2" />
             </Carousel>
             
             <div className="flex justify-center mt-6 space-x-2">
